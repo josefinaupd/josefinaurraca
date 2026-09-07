@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220" role="img" aria-labelledby="lk">
+  <title id="lk">Josefina Urraca · Pianista</title>
+  <rect width="900" height="220" fill="#efe6d7"/>
+
+  <!-- Marca -->
+  <g transform="translate(20,10) scale(1)">
+    <g stroke="#8b2331" stroke-width="3">
+      <line x1="22" y1="60" x2="178" y2="60"/><line x1="22" y1="78" x2="178" y2="78"/>
+      <line x1="22" y1="96" x2="178" y2="96"/><line x1="22" y1="114" x2="178" y2="114"/>
+      <line x1="22" y1="132" x2="178" y2="132"/>
+    </g>
+    <g fill="none" stroke="#efe6d7" stroke-width="34">
+      <path d="M78 52 V118 A22 22 0 0 1 34 118"/><path d="M112 52 V118 A27 27 0 0 0 166 118 V52"/>
+    </g>
+    <g fill="none" stroke="#14100e" stroke-width="18">
+      <path d="M78 52 V118 A22 22 0 0 1 34 118"/><path d="M112 52 V118 A27 27 0 0 0 166 118 V52"/>
+    </g>
+    <g fill="none" stroke="#14100e" stroke-width="8">
+      <path d="M8 46 V8 H46"/><path d="M192 154 V192 H154"/>
+    </g>
+  </g>
+
+  <!-- Filete vertical -->
+  <line x1="248" y1="46" x2="248" y2="174" stroke="#14100e" stroke-width="2" opacity=".35"/>
+
+  <!-- Logotipo (texto: en web se compone con Bodoni Moda + Archivo) -->
+  <text x="286" y="112" font-family="Bodoni Moda, Didot, Times New Roman, serif"
+        font-size="82" font-weight="700" letter-spacing="-1" fill="#14100e">Josefina</text>
+  <text x="286" y="176" font-family="Bodoni Moda, Didot, Times New Roman, serif"
+        font-size="82" font-weight="700" font-style="italic" letter-spacing="-1" fill="#8b2331">Urraca</text>
+  <text x="600" y="176" font-family="Archivo, Helvetica Neue, Arial, sans-serif"
+        font-size="17" font-weight="500" letter-spacing="6" fill="#14100e" opacity=".65">PIANISTA</text>
+</svg>

@@ -7,262 +7,256 @@
 <meta name="description" content="Josefina Urraca, pianista. Nueva York y Asturias. Co-fundadora de CreArtBox y co-directora del Festival ADAR. Biografía, proyectos, agenda y contacto.">
 <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://josefinaurraca.com/">
+<meta name="theme-color" content="#0a0a0a">
 
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Josefina Urraca — pianista">
-<meta property="og:description" content="Pianista. Nueva York / Asturias. CreArtBox · Festival ADAR.">
+<meta property="og:description" content="Pianista. Nueva York y Asturias. CreArtBox y Festival ADAR.">
 <meta property="og:url" content="https://josefinaurraca.com/">
 <meta property="og:image" content="https://josefinaurraca.com/assets/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
 <header class="barra">
-  <h1 class="barra__nombre"><a href="#">Josefina Urraca</a></h1>
-  <nav class="menu" aria-label="Secciones">
-    <a href="#biografia" data-es="Biografía" data-en="Biography">Biografía</a>
-    <a href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a>
-    <a href="#trayectoria" data-es="Trayectoria" data-en="Background">Trayectoria</a>
-    <a href="#agenda" data-es="Agenda" data-en="Calendar">Agenda</a>
-    <a href="#prensa" data-es="Prensa" data-en="Press">Prensa</a>
-    <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
-  </nav>
-  <p class="idioma">
-    <button type="button" data-setlang="es" aria-pressed="true">Es</button>
-    <button type="button" data-setlang="en" aria-pressed="false">En</button>
-  </p>
+  <div class="pagina">
+    <p class="barra__firma"><a href="#">Josefina Urraca</a></p>
+    <nav aria-label="Secciones">
+      <a href="#biografia" data-es="Biografía" data-en="Biography">Biografía</a>
+      <a href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a>
+      <a href="#agenda" data-es="Agenda" data-en="Calendar">Agenda</a>
+      <a href="#prensa" data-es="Prensa" data-en="Press">Prensa</a>
+      <a href="#trayectoria" data-es="Trayectoria" data-en="Background">Trayectoria</a>
+      <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+    <p class="lenguas">
+      <button type="button" data-setlang="es" aria-pressed="true">Es</button>
+      <span aria-hidden="true">/</span>
+      <button type="button" data-setlang="en" aria-pressed="false">En</button>
+    </p>
+  </div>
 </header>
 
-<!-- Portada ------------------------------------------------------------- -->
-<div class="portada">
-  <img src="assets/img/portada.jpg" width="2000" height="1125"
-       alt="Josefina Urraca al piano ante un muro de ladrillo, con una proyección de luz sobre la tapa del instrumento">
-  <div class="portada__texto">
-    <p class="portada__donde" data-es="Nueva York · Asturias" data-en="New York · Asturias">Nueva York · Asturias</p>
-    <p class="portada__oficio" data-es="Pianista" data-en="Pianist">Pianista</p>
-    <p class="portada__cita">
-      <span data-es="«Su introspección y su abandono musical.»" data-en="“Her introspection and musical abandon.”">«Su introspección y su abandono musical.»</span>
+<!-- Cartel de apertura -------------------------------------------------- -->
+<div class="cartel pagina">
+  <h1 class="cartel__nombre">
+    <span class="oculto">Josefina Urraca</span>
+    <svg class="justificado" viewBox="0 0 4690 730" aria-hidden="true"><text x="0" y="730" font-size="1000" letter-spacing="-30" textLength="4690" lengthAdjust="spacingAndGlyphs">JOSEFINA</text></svg>
+    <svg class="justificado" viewBox="0 0 4070 730" aria-hidden="true"><text x="0" y="730" font-size="1000" letter-spacing="-30" textLength="4070" lengthAdjust="spacingAndGlyphs">URRACA</text></svg>
+  </h1>
+  <div class="cartel__pie rejilla">
+    <p class="cartel__oficio" data-es="pianista" data-en="pianist">pianista</p>
+    <div class="cartel__cita">
+      <p data-es="«Su introspección y su abandono musical.»" data-en="“Her introspection and musical abandon.”">«Su introspección y su abandono musical.»</p>
       <cite>Mundo Clásico</cite>
-    </p>
+    </div>
   </div>
 </div>
 
+<figure class="sangre sangre--alta">
+  <img src="assets/img/portada.jpg" width="2000" height="1125"
+       alt="Josefina Urraca al piano ante un muro de ladrillo, con una proyección de luz sobre la tapa del instrumento">
+</figure>
+
 <!-- Declaración --------------------------------------------------------- -->
-<section class="declaracion">
-  <div class="caja">
-    <blockquote data-es="Ser meticulosa, y libre. Buscar el equilibrio entre la precisión y la expresión: honrar cada detalle de la partitura y dejar al mismo tiempo que la música respire con emoción y espontaneidad." data-en="Be meticulous, and free. Finding the balance between precision and expression: honouring every detail of the score while letting the music breathe with emotion and spontaneity.">Ser meticulosa, y libre. Buscar el equilibrio entre la precisión y la expresión: honrar cada detalle de la partitura y dejar al mismo tiempo que la música respire con emoción y espontaneidad.</blockquote>
-    <p class="firma">Josefina Urraca</p>
+<section class="bloque">
+  <div class="pagina rejilla">
+    <p class="declaracion__golpe" data-es="Ser meticulosa, y libre." data-en="Be meticulous, and free.">Ser meticulosa, y libre.</p>
+    <p class="declaracion__resto" data-es="Buscar el equilibrio entre la precisión y la expresión: honrar cada detalle de la partitura y dejar al mismo tiempo que la música respire con emoción y espontaneidad." data-en="Finding the balance between precision and expression: honouring every detail of the score while letting the music breathe with emotion and spontaneity.">Buscar el equilibrio entre la precisión y la expresión: honrar cada detalle de la partitura y dejar al mismo tiempo que la música respire con emoción y espontaneidad.</p>
+    <p class="declaracion__firma senal">Josefina Urraca</p>
   </div>
 </section>
 
 <!-- Biografía ----------------------------------------------------------- -->
-<section id="biografia">
-  <div class="caja">
-    <p class="rotulo" data-es="Biografía" data-en="Biography">Biografía</p>
-    <div class="bio">
-      <figure>
-        <img src="assets/img/retrato.jpg" width="1100" height="1375" loading="lazy"
-             alt="Retrato de Josefina Urraca sentada al piano, con los ojos cerrados">
-        <figcaption data-es="Recital de CreArtBox, Nueva York." data-en="CreArtBox recital, New York.">Recital de CreArtBox, Nueva York.</figcaption>
-      </figure>
-      <div>
-        <p data-es="Josefina Urraca nació en España en una casa de música: su madre es profesora de piano, su hermano violonchelista y su abuelo, melómano incansable. El piano no fue una elección tardía; era el idioma de la casa." data-en="Josefina Urraca was born in Spain into a house full of music: her mother is a piano teacher, her brother a cellist, her grandfather a tireless music lover. The piano was never a late decision; it was the language of the house.">Josefina Urraca nació en España en una casa de música: su madre es profesora de piano, su hermano violonchelista y su abuelo, melómano incansable. El piano no fue una elección tardía; era el idioma de la casa.</p>
+<section class="bloque" id="biografia">
+  <div class="pagina rejilla">
+    <p class="bio__senal senal" data-es="Biografía" data-en="Biography">Biografía</p>
+    <div class="bio__texto">
+      <p data-es="Nació en España en una casa de música: su madre es profesora de piano, su hermano violonchelista y su abuelo, melómano incansable. El piano no fue una elección tardía; era el idioma de la casa." data-en="She was born in Spain into a house full of music: her mother is a piano teacher, her brother a cellist, her grandfather a tireless music lover. The piano was never a late decision; it was the language of the house.">Nació en España en una casa de música: su madre es profesora de piano, su hermano violonchelista y su abuelo, melómano incansable. El piano no fue una elección tardía; era el idioma de la casa.</p>
 
-        <p data-es="Su formación recorre el Conservatorio de Salamanca, la Universidad de Alcalá de Henares, la École Normale Supérieure de Musique «Alfred Cortot» de París y la Escuela Superior de Música Reina Sofía de Madrid, hasta el Máster en la Manhattan School of Music, obtenido en 2014 con las máximas calificaciones. Mundo Clásico ha descrito su manera de tocar por su introspección y su abandono musical: precisión y riesgo emocional en la misma frase." data-en="Her training runs through the Salamanca Conservatory, the University of Alcalá de Henares, the École Normale Supérieure de Musique “Alfred Cortot” in Paris and the Reina Sofía School of Music in Madrid, up to her Master's degree at the Manhattan School of Music, awarded in 2014 with the highest marks. Mundo Clásico has described her playing for its introspection and musical abandon: precision and emotional risk in the same phrase.">Su formación recorre el Conservatorio de Salamanca, la Universidad de Alcalá de Henares, la École Normale Supérieure de Musique «Alfred Cortot» de París y la Escuela Superior de Música Reina Sofía de Madrid, hasta el Máster en la Manhattan School of Music, obtenido en 2014 con las máximas calificaciones. Mundo Clásico ha descrito su manera de tocar por su introspección y su abandono musical: precisión y riesgo emocional en la misma frase.</p>
+      <p data-es="Su formación recorre el Conservatorio de Salamanca, la Universidad de Alcalá de Henares, la École Normale Supérieure de Musique «Alfred Cortot» de París y la Escuela Superior de Música Reina Sofía de Madrid, hasta el Máster en la Manhattan School of Music, obtenido en 2014 con las máximas calificaciones." data-en="Her training runs through the Salamanca Conservatory, the University of Alcalá de Henares, the École Normale Supérieure de Musique “Alfred Cortot” in Paris and the Reina Sofía School of Music in Madrid, up to her Master's degree at the Manhattan School of Music, awarded in 2014 with the highest marks.">Su formación recorre el Conservatorio de Salamanca, la Universidad de Alcalá de Henares, la École Normale Supérieure de Musique «Alfred Cortot» de París y la Escuela Superior de Música Reina Sofía de Madrid, hasta el Máster en la Manhattan School of Music, obtenido en 2014 con las máximas calificaciones.</p>
 
-        <p data-es="Desde Nueva York reparte el trabajo entre el escenario, la dirección artística y la enseñanza: programa temporadas, encarga obra nueva a compositores vivos, diseña producciones que suman imagen y escena al repertorio, y da clase de piano en su estudio de Queens. Su repertorio va del clásico a la música de hoy, casi siempre en la misma velada." data-en="From New York she divides her work between the stage, artistic direction and teaching: programming seasons, commissioning new work from living composers, designing productions that add image and staging to the repertoire, and teaching piano at her studio in Queens. Her repertoire runs from the classics to the music of today, usually within the same evening.">Desde Nueva York reparte el trabajo entre el escenario, la dirección artística y la enseñanza: programa temporadas, encarga obra nueva a compositores vivos, diseña producciones que suman imagen y escena al repertorio, y da clase de piano en su estudio de Queens. Su repertorio va del clásico a la música de hoy, casi siempre en la misma velada.</p>
-      </div>
+      <p data-es="Desde Nueva York reparte el trabajo entre el escenario, la dirección artística y la enseñanza: programa temporadas, encarga obra nueva a compositores vivos, diseña producciones que suman imagen y escena al repertorio, y da clase de piano en su estudio de Queens. Su repertorio va del clásico a la música de hoy, casi siempre en la misma velada." data-en="From New York she divides her work between the stage, artistic direction and teaching: programming seasons, commissioning new work from living composers, designing productions that add image and staging to the repertoire, and teaching piano at her studio in Queens. Her repertoire runs from the classics to the music of today, usually within the same evening.">Desde Nueva York reparte el trabajo entre el escenario, la dirección artística y la enseñanza: programa temporadas, encarga obra nueva a compositores vivos, diseña producciones que suman imagen y escena al repertorio, y da clase de piano en su estudio de Queens. Su repertorio va del clásico a la música de hoy, casi siempre en la misma velada.</p>
     </div>
+    <figure class="bio__retrato">
+      <img src="assets/img/retrato.jpg" width="1100" height="1375" loading="lazy"
+           alt="Retrato de Josefina Urraca sentada al piano, con los ojos cerrados">
+    </figure>
   </div>
 </section>
 
-<!-- Banda de imagen ----------------------------------------------------- -->
-<div class="banda">
+<figure class="sangre sangre--media">
   <img src="assets/img/duo.jpg" width="1500" height="1000" loading="lazy"
        alt="Vista desde arriba de un concierto de piano y flauta en una sala de muros de canto rodado">
-  <p class="pie" data-es="Piano y flauta, concierto de cámara." data-en="Piano and flute, chamber concert.">Piano y flauta, concierto de cámara.</p>
-</div>
+</figure>
 
 <!-- Proyectos ----------------------------------------------------------- -->
-<section id="proyectos">
-  <div class="caja">
-    <p class="rotulo" data-es="Proyectos" data-en="Projects">Proyectos</p>
+<section class="bloque" id="proyectos">
 
-    <article class="lamina">
-      <figure class="lamina__foto">
+  <article class="proyecto proyecto--a">
+    <div class="pagina rejilla">
+      <h2 class="proyecto__nombre"><span class="oculto">CreArtBox</span><svg class="justificado" viewBox="0 0 5870 730" aria-hidden="true"><text x="0" y="730" font-size="1000" letter-spacing="-30" textLength="5870" lengthAdjust="spacingAndGlyphs">CREARTBOX</text></svg></h2>
+      <figure class="proyecto__marco">
         <img src="assets/img/creartbox.jpg" width="1500" height="1000" loading="lazy"
              alt="Ensemble tocando en una sala envuelta por una instalación de puntos de luz, rodeado de público">
-        <figcaption>
-          <span class="lamina__rotulo">CreArtBox</span>
-          <span class="lamina__donde" data-es="Nueva York · desde 2013 · Co-fundadora y directora" data-en="New York · since 2013 · Co-founder and director">Nueva York · desde 2013 · Co-fundadora y directora</span>
-        </figcaption>
       </figure>
-      <div class="lamina__texto">
+      <div class="proyecto__cuerpo">
+        <p class="proyecto__donde" data-es="Nueva York, desde 2013. Co-fundadora y directora." data-en="New York, since 2013. Co-founder and director.">Nueva York, desde 2013. Co-fundadora y directora.</p>
         <p data-es="Colectivo de música de cámara fundado con el flautista y compositor Guillermo Laporta. Interpreta el gran repertorio y estrena obra de compositores vivos en producciones que incorporan artes visuales, proyección y teatralidad. Programa la serie CreArt Music en Manhattan, el festival CreArt Music en Queens y el programa educativo CreArtED. The New Yorker lo ha incluido entre sus recomendaciones de arte y música." data-en="A chamber music collective founded with flutist and composer Guillermo Laporta. It performs the great repertoire and premieres work by living composers in productions that bring in visual art, projection and theatricality. It programmes the CreArt Music series in Manhattan, the CreArt Music festival in Queens and the CreArtED education programme. The New Yorker has included it among its art and music picks.">Colectivo de música de cámara fundado con el flautista y compositor Guillermo Laporta. Interpreta el gran repertorio y estrena obra de compositores vivos en producciones que incorporan artes visuales, proyección y teatralidad. Programa la serie CreArt Music en Manhattan, el festival CreArt Music en Queens y el programa educativo CreArtED. The New Yorker lo ha incluido entre sus recomendaciones de arte y música.</p>
-        <a class="sitio" href="https://creartbox.nyc" rel="noopener">creartbox.nyc</a>
+        <p class="proyecto__sitio"><a href="https://creartbox.nyc" rel="noopener">creartbox.nyc</a></p>
       </div>
-    </article>
+    </div>
+  </article>
 
-    <article class="lamina">
-      <figure class="lamina__foto">
+  <article class="proyecto proyecto--b">
+    <div class="pagina rejilla">
+      <h2 class="proyecto__nombre"><span class="oculto">Festival ADAR</span><svg class="justificado" viewBox="0 0 7470 730" aria-hidden="true"><text x="0" y="730" font-size="1000" letter-spacing="-30" textLength="7470" lengthAdjust="spacingAndGlyphs">FESTIVAL ADAR</text></svg></h2>
+      <figure class="proyecto__marco">
         <img src="assets/img/adar.jpg" width="1500" height="1000" loading="lazy"
              alt="Concierto en el claustro de un monasterio, con el público de pie alrededor de un jardín de setos y una fuente">
-        <figcaption>
-          <span class="lamina__rotulo">Festival ADAR</span>
-          <span class="lamina__donde" data-es="Asturias · desde 2021 · Co-directora" data-en="Asturias · since 2021 · Co-director">Asturias · desde 2021 · Co-directora</span>
-        </figcaption>
       </figure>
-      <div class="lamina__texto">
-        <p data-es="Festival internacional e itinerante dedicado a revitalizar la Asturias rural: conciertos en aldeas, iglesias, hórreos y paisajes, residencias de artistas, encargos a compositores y proyectos site-specific de creadores que trabajan el territorio como material. La imagen es del claustro del Monasterio de Corias." data-en="An international, itinerant festival devoted to revitalising rural Asturias: concerts in villages, churches, granaries and landscapes, artist residencies, composer commissions and site-specific projects by artists who treat the territory as material. The photograph is of the cloister of the Monastery of Corias.">Festival internacional e itinerante dedicado a revitalizar la Asturias rural: conciertos en aldeas, iglesias, hórreos y paisajes, residencias de artistas, encargos a compositores y proyectos site-specific de creadores que trabajan el territorio como material. La imagen es del claustro del Monasterio de Corias.</p>
-        <a class="sitio" href="https://festivaladar.com" rel="noopener">festivaladar.com</a>
+      <div class="proyecto__cuerpo">
+        <p class="proyecto__donde" data-es="Asturias, desde 2021. Co-directora." data-en="Asturias, since 2021. Co-director.">Asturias, desde 2021. Co-directora.</p>
+        <p data-es="Festival internacional e itinerante dedicado a revitalizar la Asturias rural: conciertos en aldeas, iglesias, hórreos y paisajes, residencias de artistas, encargos a compositores y proyectos site-specific de creadores que trabajan el territorio como material. La fotografía es del claustro del Monasterio de Corias." data-en="An international, itinerant festival devoted to revitalising rural Asturias: concerts in villages, churches, granaries and landscapes, artist residencies, composer commissions and site-specific projects by artists who treat the territory as material. The photograph is of the cloister of the Monastery of Corias.">Festival internacional e itinerante dedicado a revitalizar la Asturias rural: conciertos en aldeas, iglesias, hórreos y paisajes, residencias de artistas, encargos a compositores y proyectos site-specific de creadores que trabajan el territorio como material. La fotografía es del claustro del Monasterio de Corias.</p>
+        <p class="proyecto__sitio"><a href="https://festivaladar.com" rel="noopener">festivaladar.com</a></p>
       </div>
-    </article>
+    </div>
+  </article>
 
-    <article class="lamina lamina--doble">
-      <img src="assets/img/estudio.jpg" width="400" height="500" loading="lazy"
-           alt="Josefina Urraca de perfil, sonriendo, sobre fondo claro">
-      <div>
-        <h3 data-es="Estudio de piano" data-en="Piano studio">Estudio de piano</h3>
-        <span class="donde" data-es="Queens, Nueva York · Todos los niveles" data-en="Queens, New York · All levels">Queens, Nueva York · Todos los niveles</span>
+  <article class="proyecto proyecto--c">
+    <div class="pagina rejilla">
+      <h2 class="proyecto__nombre proyecto__nombre--menor" data-es="Estudio de piano" data-en="Piano studio">Estudio de piano</h2>
+      <div class="proyecto__cuerpo">
+        <p class="proyecto__donde" data-es="Queens, Nueva York. Todos los niveles." data-en="Queens, New York. All levels.">Queens, Nueva York. Todos los niveles.</p>
         <p data-es="Clases particulares en español o en inglés, talleres en comunidad y conciertos didácticos dentro del programa CreArtED. Se trabaja la técnica y el oído, pero también la costumbre de tocar delante de gente. Consultar disponibilidad por correo." data-en="Private lessons in Spanish or English, community workshops and didactic concerts within the CreArtED programme. Technique and ear training, but also the habit of playing in front of people. Ask about availability by email.">Clases particulares en español o en inglés, talleres en comunidad y conciertos didácticos dentro del programa CreArtED. Se trabaja la técnica y el oído, pero también la costumbre de tocar delante de gente. Consultar disponibilidad por correo.</p>
       </div>
-    </article>
-
-  </div>
-</section>
-
-<!-- Trayectoria --------------------------------------------------------- -->
-<section id="trayectoria">
-  <div class="caja">
-    <p class="rotulo" data-es="Trayectoria" data-en="Background">Trayectoria</p>
-    <div class="columnas">
-
-      <div>
-        <h3 data-es="Formación" data-en="Training">Formación</h3>
-        <ul>
-          <li><span data-es="Conservatorio de Salamanca" data-en="Salamanca Conservatory">Conservatorio de Salamanca</span><span class="donde">Salamanca</span></li>
-          <li><span data-es="Universidad de Alcalá de Henares" data-en="University of Alcalá de Henares">Universidad de Alcalá de Henares</span><span class="donde">Madrid</span></li>
-          <li>École Normale Supérieure de Musique «Alfred Cortot»<span class="donde" data-es="París" data-en="Paris">París</span></li>
-          <li><span data-es="Escuela Superior de Música Reina Sofía" data-en="Reina Sofía School of Music">Escuela Superior de Música Reina Sofía</span><span class="donde">Madrid</span></li>
-          <li>Manhattan School of Music<span class="donde" data-es="Máster, 2014" data-en="Master's degree, 2014">Máster, 2014</span></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 data-es="Becas y premios" data-en="Fellowships and prizes">Becas y premios</h3>
-        <ul>
-          <li><span data-es="Fundación Caja Madrid" data-en="Caja Madrid Foundation">Fundación Caja Madrid</span><span class="donde" data-es="Beca" data-en="Fellowship">Beca</span></li>
-          <li><span data-es="Fundación Albéniz" data-en="Albéniz Foundation">Fundación Albéniz</span><span class="donde" data-es="Beca" data-en="Fellowship">Beca</span></li>
-          <li>Manhattan School of Music<span class="donde" data-es="Beca" data-en="Scholarship">Beca</span></li>
-          <li><span data-es="Concurso Internacional de Piano Ciudad de Carlet" data-en="Ciudad de Carlet International Piano Competition">Concurso Internacional de Piano Ciudad de Carlet</span><span class="donde" data-es="Segundo premio" data-en="Second prize">Segundo premio</span></li>
-          <li><span data-es="Concurso Nacional Ciudad de Linares" data-en="Ciudad de Linares National Competition">Concurso Nacional Ciudad de Linares</span><span class="donde" data-es="Premiada" data-en="Awarded">Premiada</span></li>
-          <li><span data-es="Concurso Nacional Veguellina de Órbigo" data-en="Veguellina de Órbigo National Competition">Concurso Nacional Veguellina de Órbigo</span><span class="donde" data-es="Premiada" data-en="Awarded">Premiada</span></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 data-es="Escenarios" data-en="Venues">Escenarios</h3>
-        <ul>
-          <li>Carnegie Hall<span class="donde" data-es="Nueva York" data-en="New York">Nueva York</span></li>
-          <li>Salle Cortot<span class="donde" data-es="París" data-en="Paris">París</span></li>
-          <li>Collège d'Espagne, Cité Internationale<span class="donde" data-es="París" data-en="Paris">París</span></li>
-          <li><span data-es="Auditorio Sony" data-en="Sony Auditorium">Auditorio Sony</span><span class="donde">Madrid</span></li>
-          <li>Monten Hall<span class="donde">Tokio</span></li>
-          <li>Culture Lab LIC<span class="donde">Queens, Nueva York</span></li>
-        </ul>
-      </div>
-
     </div>
-  </div>
+  </article>
+
 </section>
 
 <!-- Agenda -------------------------------------------------------------- -->
-<section id="agenda">
-  <div class="caja">
-    <p class="rotulo" data-es="Agenda" data-en="Calendar">Agenda</p>
+<section class="bloque" id="agenda">
+  <div class="pagina">
     <table class="agenda">
-      <caption class="oculto" data-es="Próximas fechas" data-en="Upcoming dates">Próximas fechas</caption>
-      <thead>
-        <tr>
-          <th scope="col" data-es="Fecha" data-en="Date">Fecha</th>
-          <th scope="col" data-es="Lugar" data-en="Place">Lugar</th>
-          <th scope="col" data-es="Programa" data-en="Programme">Programa</th>
-        </tr>
-      </thead>
+      <caption data-es="Agenda" data-en="Calendar">Agenda</caption>
       <tbody>
         <tr>
-          <td class="cuando" data-es="Agosto de 2027" data-en="August 2027">Agosto de 2027</td>
-          <td data-es="Festival ADAR · Asturias" data-en="Festival ADAR · Asturias">Festival ADAR · Asturias</td>
-          <td data-es="VII edición, en preparación" data-en="Seventh edition, in preparation">VII edición, en preparación</td>
+          <td class="cuando">2027</td>
+          <td class="donde" data-es="Festival ADAR, Asturias" data-en="Festival ADAR, Asturias">Festival ADAR, Asturias</td>
+          <td class="que" data-es="VII edición, en preparación" data-en="Seventh edition, in preparation">VII edición, en preparación</td>
         </tr>
         <tr>
-          <td class="cuando por-cerrar" data-es="Temporada 2026—27" data-en="2026—27 season">Temporada 2026—27</td>
-          <td data-es="CreArt Music Series · Manhattan, Nueva York" data-en="CreArt Music Series · Manhattan, New York">CreArt Music Series · Manhattan, Nueva York</td>
-          <td data-es="Recital y música de cámara" data-en="Recital and chamber music">Recital y música de cámara</td>
+          <td class="cuando">2026<em>–</em>27</td>
+          <td class="donde" data-es="CreArt Music Series, Manhattan" data-en="CreArt Music Series, Manhattan">CreArt Music Series, Manhattan</td>
+          <td class="que" data-es="Recital y música de cámara" data-en="Recital and chamber music">Recital y música de cámara</td>
         </tr>
         <tr>
-          <td class="cuando por-cerrar" data-es="Temporada 2026—27" data-en="2026—27 season">Temporada 2026—27</td>
-          <td data-es="CreArt Music Festival · Queens, Nueva York" data-en="CreArt Music Festival · Queens, New York">CreArt Music Festival · Queens, Nueva York</td>
-          <td data-es="Cámara, escena y estrenos" data-en="Chamber music, staging and premieres">Cámara, escena y estrenos</td>
+          <td class="cuando">2026<em>–</em>27</td>
+          <td class="donde" data-es="CreArt Music Festival, Queens" data-en="CreArt Music Festival, Queens">CreArt Music Festival, Queens</td>
+          <td class="que" data-es="Cámara, escena y estrenos" data-en="Chamber music, staging and premieres">Cámara, escena y estrenos</td>
         </tr>
       </tbody>
     </table>
-    <p class="nota" data-es="Las fechas concretas de la temporada se van cerrando; para giras, disponibilidad o el programa completo, escribir al correo de contacto." data-en="Individual dates for the season are still being confirmed; for touring, availability or the full programme, write to the contact address.">Las fechas concretas de la temporada se van cerrando; para giras, disponibilidad o el programa completo, escribir al correo de contacto.</p>
+    <p class="agenda__nota" data-es="Las fechas concretas de la temporada se van cerrando. Para giras, disponibilidad o el programa completo, escribir al correo de contacto." data-en="Individual dates for the season are still being confirmed. For touring, availability or the full programme, write to the contact address.">Las fechas concretas de la temporada se van cerrando. Para giras, disponibilidad o el programa completo, escribir al correo de contacto.</p>
   </div>
 </section>
 
 <!-- Prensa -------------------------------------------------------------- -->
-<section id="prensa">
-  <div class="caja">
-    <p class="rotulo" data-es="Prensa" data-en="Press">Prensa</p>
+<section class="bloque" id="prensa">
+  <div class="pagina">
     <ul class="prensa">
-      <li>
-        <blockquote data-es="«Introspección y abandono musical.»" data-en="“Introspection and musical abandon.”">«Introspección y abandono musical.»</blockquote>
+      <li class="rejilla">
+        <blockquote data-es="Introspección y abandono musical." data-en="Introspection and musical abandon.">Introspección y abandono musical.</blockquote>
         <cite>Mundo Clásico</cite>
       </li>
-      <li>
-        <blockquote data-es="«Entre las recomendaciones de arte y música.»" data-en="“Among the art and music picks.”">«Entre las recomendaciones de arte y música.»</blockquote>
-        <cite>The New Yorker · CreArtBox</cite>
+      <li class="rejilla">
+        <blockquote data-es="Entre las recomendaciones de arte y música." data-en="Among the art and music picks.">Entre las recomendaciones de arte y música.</blockquote>
+        <cite>The New Yorker, sobre CreArtBox</cite>
       </li>
-      <li>
-        <blockquote data-es="«Un ensemble dedicado a los eventos multidisciplinares.»" data-en="“An ensemble devoted to multidisciplinary events.”">«Un ensemble dedicado a los eventos multidisciplinares.»</blockquote>
-        <cite>Time Out · CreArtBox</cite>
+      <li class="rejilla">
+        <blockquote data-es="Un ensemble dedicado a los eventos multidisciplinares." data-en="An ensemble devoted to multidisciplinary events.">Un ensemble dedicado a los eventos multidisciplinares.</blockquote>
+        <cite>Time Out, sobre CreArtBox</cite>
       </li>
-      <li>
-        <blockquote data-es="«Aclamada pianista española presenta su temporada en Nueva York.»" data-en="“Acclaimed Spanish pianist presents her New York season.”">«Aclamada pianista española presenta su temporada en Nueva York.»</blockquote>
+      <li class="rejilla">
+        <blockquote data-es="Aclamada pianista española presenta su temporada en Nueva York." data-en="Acclaimed Spanish pianist presents her New York season.">Aclamada pianista española presenta su temporada en Nueva York.</blockquote>
         <cite>Broadway World</cite>
       </li>
     </ul>
   </div>
 </section>
 
-<!-- Contacto ------------------------------------------------------------ -->
-<section id="contacto">
-  <div class="caja">
-    <p class="rotulo" data-es="Contacto" data-en="Contact">Contacto</p>
-    <div class="medida">
-      <p data-es="Conciertos, producción, encargos y clases:" data-en="Concerts, production, commissions and lessons:">Conciertos, producción, encargos y clases:</p>
-      <!-- REVISAR: confirmar la dirección de correo pública antes de difundir el enlace. -->
-      <p><a class="correo" href="mailto:hola@josefinaurraca.com">hola@josefinaurraca.com</a></p>
+<!-- Trayectoria --------------------------------------------------------- -->
+<section class="bloque datos" id="trayectoria">
+  <div class="pagina">
+    <p class="senal" data-es="Trayectoria" data-en="Background">Trayectoria</p>
+    <div class="columnas">
+
+      <div>
+        <h3 data-es="Formación" data-en="Training">Formación</h3>
+        <ul>
+          <li><span data-es="Conservatorio de Salamanca" data-en="Salamanca Conservatory">Conservatorio de Salamanca</span><span class="apunte">Salamanca</span></li>
+          <li><span data-es="Universidad de Alcalá de Henares" data-en="University of Alcalá de Henares">Universidad de Alcalá de Henares</span><span class="apunte">Madrid</span></li>
+          <li>École Normale Supérieure de Musique «Alfred Cortot»<span class="apunte" data-es="París" data-en="Paris">París</span></li>
+          <li><span data-es="Escuela Superior de Música Reina Sofía" data-en="Reina Sofía School of Music">Escuela Superior de Música Reina Sofía</span><span class="apunte">Madrid</span></li>
+          <li>Manhattan School of Music<span class="apunte" data-es="Máster, 2014" data-en="Master's degree, 2014">Máster, 2014</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 data-es="Becas y premios" data-en="Fellowships and prizes">Becas y premios</h3>
+        <ul>
+          <li><span data-es="Fundación Caja Madrid" data-en="Caja Madrid Foundation">Fundación Caja Madrid</span><span class="apunte" data-es="Beca" data-en="Fellowship">Beca</span></li>
+          <li><span data-es="Fundación Albéniz" data-en="Albéniz Foundation">Fundación Albéniz</span><span class="apunte" data-es="Beca" data-en="Fellowship">Beca</span></li>
+          <li>Manhattan School of Music<span class="apunte" data-es="Beca" data-en="Scholarship">Beca</span></li>
+          <li><span data-es="Concurso Internacional de Piano Ciudad de Carlet" data-en="Ciudad de Carlet International Piano Competition">Concurso Internacional de Piano Ciudad de Carlet</span><span class="apunte" data-es="Segundo premio" data-en="Second prize">Segundo premio</span></li>
+          <li><span data-es="Concurso Nacional Ciudad de Linares" data-en="Ciudad de Linares National Competition">Concurso Nacional Ciudad de Linares</span><span class="apunte" data-es="Premiada" data-en="Awarded">Premiada</span></li>
+          <li><span data-es="Concurso Nacional Veguellina de Órbigo" data-en="Veguellina de Órbigo National Competition">Concurso Nacional Veguellina de Órbigo</span><span class="apunte" data-es="Premiada" data-en="Awarded">Premiada</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 data-es="Escenarios" data-en="Venues">Escenarios</h3>
+        <ul>
+          <li>Carnegie Hall<span class="apunte" data-es="Nueva York" data-en="New York">Nueva York</span></li>
+          <li>Salle Cortot<span class="apunte" data-es="París" data-en="Paris">París</span></li>
+          <li>Collège d'Espagne, Cité Internationale<span class="apunte" data-es="París" data-en="Paris">París</span></li>
+          <li><span data-es="Auditorio Sony" data-en="Sony Auditorium">Auditorio Sony</span><span class="apunte">Madrid</span></li>
+          <li>Monten Hall<span class="apunte" data-es="Tokio" data-en="Tokyo">Tokio</span></li>
+          <li>Culture Lab LIC<span class="apunte" data-es="Queens, Nueva York" data-en="Queens, New York">Queens, Nueva York</span></li>
+        </ul>
+      </div>
+
     </div>
-    <ul class="tambien">
-      <li><a href="https://creartbox.nyc" rel="noopener">creartbox.nyc</a></li>
-      <li><a href="https://festivaladar.com" rel="noopener">festivaladar.com</a></li>
-      <li><a href="https://www.instagram.com/creartboxnyc/" rel="noopener">Instagram</a></li>
-      <li><a href="https://www.linkedin.com/in/josefina-urraca-9a829a60" rel="noopener">LinkedIn</a></li>
-    </ul>
   </div>
 </section>
 
-<footer class="pie-pagina">
-  <p>Josefina Urraca · <span data-es="pianista" data-en="pianist">pianista</span></p>
-  <p data-es="Nueva York — Asturias" data-en="New York — Asturias">Nueva York — Asturias</p>
-  <p>© <span id="anio">2026</span></p>
+<!-- Contacto ------------------------------------------------------------ -->
+<section class="bloque" id="contacto">
+  <div class="pagina">
+    <p class="contacto__senal senal" data-es="Conciertos, producción, encargos y clases" data-en="Concerts, production, commissions and lessons">Conciertos, producción, encargos y clases</p>
+    <!-- REVISAR: confirmar la dirección de correo pública antes de difundir el enlace. -->
+    <p><a class="correo" href="mailto:hola@josefinaurraca.com">hola@josefinaurraca.com</a></p>
+    <p class="enlaces">
+      <a href="https://creartbox.nyc" rel="noopener">creartbox.nyc</a>
+      <a href="https://festivaladar.com" rel="noopener">festivaladar.com</a>
+      <a href="https://www.instagram.com/creartboxnyc/" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/josefina-urraca-9a829a60" rel="noopener">LinkedIn</a>
+    </p>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="pagina">
+    <p data-es="Josefina Urraca, pianista. Nueva York y Asturias." data-en="Josefina Urraca, pianist. New York and Asturias.">Josefina Urraca, pianista. Nueva York y Asturias.</p>
+    <p data-es="Fotografías: crédito por acreditar." data-en="Photographs: credit pending.">Fotografías: crédito por acreditar.</p>
+    <p>© <span id="anio">2026</span></p>
+  </div>
 </footer>
 
 <script src="assets/js/main.js" defer></script>

@@ -100,11 +100,22 @@ python3 tools/artefacto.py      # dist/ficha.html, todo en un archivo
 
 No hay compilación: los archivos se publican tal cual.
 
-- **GitHub Pages** → Settings → Pages → Deploy from branch, carpeta raíz.
-  El repositorio incluye `.nojekyll` para que `assets/` se sirva sin filtrar.
-- **Netlify / Vercel** → arrastrar la carpeta; sin comando de build.
-- Dominio propio: apuntar `josefinaurraca.com` al hosting y revisar
-  `<link rel="canonical">`.
+**GitHub Pages** ya está en marcha. `.github/workflows/pages.yml` se dispara con
+cada push a la rama por defecto (y a mano desde la pestaña Actions), copia
+`index.html`, `assets/` y `.nojekyll` a `_site/` y lo despliega. Fuera quedan
+`README.md`, `dist/` y `tools/`, que no son el sitio.
+
+    https://josefinaupd.github.io/josefinaurraca/
+
+Para usar el dominio propio: en Settings → Pages, escribir `josefinaurraca.com`
+en *Custom domain* (GitHub añade el archivo `CNAME` al repositorio), y en el DNS
+del dominio apuntar los registros `A` de la raíz a las IP de GitHub Pages
+—`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`— y
+un `CNAME` de `www` a `josefinaupd.github.io`. Después, activar *Enforce HTTPS*.
+El `<link rel="canonical">` del HTML ya apunta a `josefinaurraca.com`.
+
+Alternativa sin Actions: **Netlify / Vercel** → arrastrar la carpeta, sin
+comando de build.
 
 `dist/ficha.html` es sólo la vista previa de un archivo; el sitio que se publica
 es `index.html` con sus carpetas.

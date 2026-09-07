@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 130" width="520" height="130" role="img" aria-labelledby="t">
+  <title id="t">Josefina Urraca — pianista</title>
+  <rect width="520" height="130" fill="#e9eae6"/>
+  <!-- Sello de inventario: filete, nombre en serif, oficio mecanografiado -->
+  <rect x="16" y="16" width="488" height="98" fill="none" stroke="#191c1a" stroke-width="1"/>
+  <line x1="16" y1="82" x2="504" y2="82" stroke="#b9bdb6" stroke-width="1"/>
+  <text x="34" y="66" font-family="Spectral, Hoefler Text, Georgia, serif"
+        font-size="40" fill="#191c1a">Josefina Urraca</text>
+  <text x="34" y="103" font-family="Courier Prime, Courier New, monospace"
+        font-size="13" letter-spacing="3.4" fill="#4a504c">PIANISTA</text>
+  <text x="504" y="103" text-anchor="end" font-family="Courier Prime, Courier New, monospace"
+        font-size="13" letter-spacing="2" fill="#4a504c">NY / AST</text>
+</svg>

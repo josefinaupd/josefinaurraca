@@ -1,23 +1,300 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Josefina Urraca</title>
-<meta name="description" content="Josefina Urraca, pianista. Nueva York y Asturias. CreArtBox, Festival ADAR. Ficha, biografía, formación, escenarios y agenda.">
-<link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
-<link rel="canonical" href="https://josefinaurraca.com/">
-<meta property="og:type" content="profile">
-<meta property="og:title" content="Josefina Urraca — pianista">
-<meta property="og:description" content="Pianista. Nueva York / Asturias. CreArtBox · Festival ADAR.">
-<meta property="og:url" content="https://josefinaurraca.com/">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
+<style>
+/* ==========================================================
+   Josefina Urraca — «FICHA»
+   Una monografía de obra: columna de margen mecanografiada,
+   texto a la medida del papel, filetes de un pixel y
+   cartelas técnicas. Ninguna animación.
+   ========================================================== */
+
+/* --- Tokens ---------------------------------------------- */
+:root{
+  --paper:#e9eae6;
+  --paper-2:#dfe1dc;
+  --ink:#191c1a;
+  --ink-2:#4a504c;
+  --rule:#b9bdb6;
+  --rule-fine:#cbcec8;
+  --link:#274a72;
+
+  --serif:"Spectral","Hoefler Text",Georgia,serif;
+  --type:"Courier Prime","Courier New",monospace;
+
+  --margin-col:9.5rem;
+  --gutter:2.75rem;
+  --measure:64ch;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181a;
+    --paper-2:#1b2023;
+    --ink:#dfe2dd;
+    --ink-2:#9aa19b;
+    --rule:#333a3b;
+    --rule-fine:#262d2e;
+    --link:#9dbfe4;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14181a;
+  --paper-2:#1b2023;
+  --ink:#dfe2dd;
+  --ink-2:#9aa19b;
+  --rule:#333a3b;
+  --rule-fine:#262d2e;
+  --link:#9dbfe4;
+}
+
+/* --- Base ------------------------------------------------ */
+*,*::before,*::after{ box-sizing:border-box; }
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--serif);
+  font-size:16px;
+  font-weight:400;
+  line-height:1.62;
+}
+img{ display:block; max-width:100%; }
+a{ color:var(--link); text-decoration:underline; text-underline-offset:2px; text-decoration-thickness:.5px; }
+a:hover{ text-decoration-thickness:1.5px; }
+h1,h2,h3,p,dl,dd,dt,ul,ol,figure,blockquote{ margin:0; padding:0; }
+ul,ol{ list-style:none; }
+:focus-visible{ outline:1.5px solid var(--link); outline-offset:2px; }
+
+.sr{ position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+
+/* --- Página y retícula ----------------------------------- */
+.page{
+  max-width:55rem;
+  margin:0 auto;
+  padding:0 clamp(1.1rem,4vw,3.5rem) 4rem;
+}
+.row{
+  display:grid;
+  grid-template-columns:var(--margin-col) minmax(0,1fr);
+  gap:0 var(--gutter);
+  padding:2.6rem 0 0;
+  border-top:1px solid var(--rule);
+  margin-top:2.6rem;
+}
+.row:first-of-type{ margin-top:0; }
+
+/* Columna de margen: etiquetas mecanografiadas contra el eje */
+.side{
+  font-family:var(--type);
+  font-size:.7rem;
+  line-height:1.5;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--ink-2);
+  text-align:right;
+}
+.side b{ display:block; color:var(--ink); font-weight:700; }
+.side span{ display:block; margin-top:.5rem; text-transform:none; letter-spacing:.02em; }
+
+.body > * + *{ margin-top:1.15rem; }
+.prose{
+  max-width:var(--measure);
+  text-align:left;
+}
+.prose + .prose{ text-indent:1.4em; }
+
+h2{
+  font-size:1.32rem;
+  font-weight:400;
+  line-height:1.25;
+  letter-spacing:.005em;
+  text-wrap:balance;
+}
+h3{
+  font-size:1.06rem;
+  font-weight:600;
+  letter-spacing:.005em;
+}
+.dim{ color:var(--ink-2); }
+.type{ font-family:var(--type); font-variant-numeric:tabular-nums; }
+
+/* --- Cabecera: cartela de sala --------------------------- */
+.head{
+  display:grid;
+  grid-template-columns:var(--margin-col) minmax(0,1fr);
+  gap:0 var(--gutter);
+  padding:2.2rem 0 1.6rem;
+}
+.head__mark{
+  font-family:var(--type);
+  font-size:.66rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--ink-2);
+  text-align:right;
+  padding-top:.35rem;
+}
+.head__name{
+  font-size:clamp(1.7rem,4.2vw,2.35rem);
+  font-weight:400;
+  line-height:1.1;
+  letter-spacing:-.008em;
+}
+.head__role{
+  font-family:var(--type);
+  font-size:.72rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-2);
+  margin-top:.55rem;
+}
+
+.bar{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:.9rem 1.6rem;
+  padding:.65rem 0;
+  border-top:1px solid var(--ink);
+  border-bottom:1px solid var(--rule);
+  font-family:var(--type);
+  font-size:.72rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.bar nav{ display:flex; flex-wrap:wrap; gap:0 1.35rem; }
+.bar nav a{ color:var(--ink); text-decoration:none; border-bottom:1px solid transparent; padding-bottom:1px; }
+.bar nav a:hover{ border-bottom-color:var(--ink); }
+.lang{ display:flex; gap:.5rem; align-items:baseline; color:var(--ink-2); }
+.lang button{
+  font:inherit; color:var(--ink-2); background:none; border:0; padding:0; cursor:pointer;
+  letter-spacing:.08em;
+}
+.lang button[aria-pressed="true"]{ color:var(--ink); border-bottom:1px solid var(--ink); }
+
+/* --- Ficha de identidad (registro) ----------------------- */
+.record{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr);
+  gap:.28rem 1.4rem;
+  font-family:var(--type);
+  font-size:.78rem;
+  max-width:46rem;
+}
+.record dt{ color:var(--ink-2); text-transform:uppercase; letter-spacing:.08em; font-size:.68rem; padding-top:.2rem; }
+.record dd{ letter-spacing:.01em; }
+
+/* --- Planchas fotográficas ------------------------------- */
+.plate{ max-width:26rem; }
+.plate__img{
+  position:relative;
+  aspect-ratio:4/5;
+  background:var(--paper-2);
+  border:1px solid var(--rule);
+}
+.plate__img img{ width:100%; height:100%; object-fit:cover; }
+.plate__img[data-empty] img{ display:none; }
+.plate__img[data-empty]::after{
+  content:attr(data-file);
+  position:absolute; left:.6rem; bottom:.5rem;
+  font-family:var(--type); font-size:.6rem; letter-spacing:.06em;
+  color:var(--ink-2);
+}
+.plate figcaption{
+  font-family:var(--type);
+  font-size:.65rem;
+  line-height:1.55;
+  letter-spacing:.04em;
+  color:var(--ink-2);
+  margin-top:.5rem;
+}
+.plate--wide{ max-width:100%; }
+.plate--wide .plate__img{ aspect-ratio:16/9; }
+.plates{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.4rem; }
+.plates .plate{ max-width:none; }
+
+/* --- Entradas de catálogo (trabajo) --------------------- */
+.entry + .entry{ margin-top:2.2rem; padding-top:2.2rem; border-top:1px solid var(--rule-fine); }
+.entry__head{ display:flex; flex-wrap:wrap; align-items:baseline; gap:.5rem .9rem; }
+.entry__meta{
+  font-family:var(--type);
+  font-size:.68rem;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  color:var(--ink-2);
+}
+.entry .prose{ margin-top:.7rem; }
+.entry__link{ font-family:var(--type); font-size:.7rem; letter-spacing:.06em; display:inline-block; margin-top:.6rem; }
+
+/* --- Listas con puntos guía ------------------------------ */
+.leaders{ max-width:var(--measure); font-size:.94rem; }
+.leaders li{ display:flex; align-items:baseline; gap:.55rem; padding:.3rem 0; }
+.leaders .fill{ flex:1 1 auto; border-bottom:1px dotted var(--rule); translate:0 -.3em; min-width:1.5rem; }
+.leaders .at{ font-family:var(--type); font-size:.72rem; letter-spacing:.06em; color:var(--ink-2); white-space:nowrap; }
+.leaders b{ font-weight:600; }
+
+/* --- Agenda --------------------------------------------- */
+.dates{ width:100%; border-collapse:collapse; font-size:.94rem; }
+.dates caption{ text-align:left; }
+.dates th{
+  font-family:var(--type); font-weight:400; font-size:.66rem;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--ink-2);
+  text-align:left; padding:0 1rem .45rem 0; border-bottom:1px solid var(--rule);
+}
+.dates td{ padding:.7rem 1rem .7rem 0; border-bottom:1px dotted var(--rule); vertical-align:baseline; }
+.dates td:first-child{ font-family:var(--type); font-size:.8rem; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.dates td:nth-child(2){ font-family:var(--type); font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-2); }
+.dates td:last-child{ font-family:var(--type); font-size:.68rem; letter-spacing:.06em; color:var(--ink-2); text-align:right; white-space:nowrap; }
+.dates .pending{ color:var(--ink-2); }
+
+/* --- Prensa --------------------------------------------- */
+.cuts{ max-width:calc(var(--measure) + 4ch); }
+.cuts li + li{ margin-top:1.15rem; padding-top:1.15rem; border-top:1px solid var(--rule-fine); }
+.cuts q{ font-style:italic; font-size:1.02rem; quotes:"«" "»" "‹" "›"; }
+.cuts cite{
+  display:block; margin-top:.3rem;
+  font-family:var(--type); font-style:normal; font-size:.66rem;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--ink-2);
+}
+
+/* --- Contacto ------------------------------------------- */
+.contact{ font-size:.98rem; }
+.contact li{ padding:.32rem 0; }
+.contact .mail{ font-size:1.12rem; }
+
+/* --- Pie ------------------------------------------------ */
+.foot{
+  margin-top:3rem; padding-top:.7rem;
+  border-top:1px solid var(--ink);
+  display:flex; flex-wrap:wrap; justify-content:space-between; gap:.5rem 1.5rem;
+  font-family:var(--type); font-size:.64rem; letter-spacing:.07em;
+  text-transform:uppercase; color:var(--ink-2);
+}
+
+/* --- Estrecho ------------------------------------------- */
+@media (max-width:760px){
+  :root{ --margin-col:1fr; --gutter:0; }
+  .head,.row{ grid-template-columns:minmax(0,1fr); }
+  .side,.head__mark{ text-align:left; margin-bottom:1rem; }
+  .side span{ display:inline; margin:0; }
+  .prose{ text-align:left; }
+  .prose + .prose{ text-indent:0; }
+  .plates{ grid-template-columns:minmax(0,1fr); }
+  .leaders li{ display:block; padding:.42rem 0; border-bottom:1px dotted var(--rule); }
+  .leaders .fill{ display:none; }
+  .leaders .at{ display:block; margin-top:.1rem; }
+  .dates thead{ display:none; }
+  .dates,.dates tbody,.dates tr,.dates td{ display:block; width:100%; }
+  .dates tr{ padding:.6rem 0; border-bottom:1px dotted var(--rule); }
+  .dates td{ padding:.08rem 0; border:0; white-space:normal; }
+  .record{ grid-template-columns:minmax(0,1fr); gap:.1rem; }
+  .record dd{ margin-bottom:.7rem; }
+  .dates td:last-child{ text-align:left; }
+}
+@media (prefers-reduced-motion:reduce){
+  *{ transition:none !important; animation:none !important; }
+}
+</style>
 <div class="page">
 
   <header class="head">
@@ -290,7 +567,31 @@
   </footer>
 
 </div>
+<script>
+/* Josefina Urraca — sólo dos cosas: idioma y año. */
+(() => {
+  'use strict';
+  const textos = [...document.querySelectorAll('[data-es][data-en]')];
+  const botones = [...document.querySelectorAll('[data-setlang]')];
 
-<script src="assets/js/main.js" defer></script>
-</body>
-</html>
+  function idioma(lang) {
+    document.documentElement.lang = lang;
+    textos.forEach(el => { el.textContent = el.dataset[lang]; });
+    botones.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.setlang === lang)));
+    try { localStorage.setItem('ju:lang', lang); } catch (_) {}
+  }
+
+  let inicial = 'es';
+  try {
+    const guardado = localStorage.getItem('ju:lang');
+    if (guardado === 'es' || guardado === 'en') inicial = guardado;
+    else if (!(navigator.language || '').toLowerCase().startsWith('es')) inicial = 'en';
+  } catch (_) {}
+  idioma(inicial);
+
+  botones.forEach(b => b.addEventListener('click', () => idioma(b.dataset.setlang)));
+
+  const anio = document.getElementById('year');
+  if (anio) anio.textContent = new Date().getFullYear();
+})();
+</script>

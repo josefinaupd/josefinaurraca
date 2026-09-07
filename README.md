@@ -1,129 +1,121 @@
 # Josefina Urraca — web personal
 
-Sitio estático (HTML + CSS + JS, sin build ni dependencias) para la pianista
-**Josefina Urraca**: intérprete, co-fundadora de **CreArtBox** (Nueva York, 2013)
-y co-directora del **Festival ADAR** (Asturias). Bilingüe ES / EN.
+Sitio estático (HTML + CSS + un JS de veinte líneas, sin build ni dependencias)
+para la pianista **Josefina Urraca**: intérprete, co-fundadora de **CreArtBox**
+(Nueva York, 2013) y co-directora del **Festival ADAR** (Asturias, 2021).
+Bilingüe ES / EN.
 
 ```
-index.html                 una sola página, seis secciones numeradas
-assets/css/main.css        sistema visual completo (comentado por bloques)
-assets/js/main.js          idioma, teclado, revelados, progreso de lectura
-assets/logo/               monograma, favicon y logotipo compuesto
-assets/img/                fotos (ver assets/img/LEEME.md)
+index.html                 la página, en secciones
+assets/css/main.css        el sistema visual entero, comentado
+assets/js/main.js          idioma y año. Nada más
+assets/logo/               sello tipográfico y favicon
+assets/img/                fotografías (ver assets/img/LEEME.md)
+tools/artefacto.py         genera dist/ficha.html en un solo archivo
 ```
 
-## El diseño: «PROGRAMA»
+## El diseño: «FICHA»
 
-La idea no es una web minimalista más, sino **un programa de concierto impreso
-llevado a la pantalla**: papel crudo con grano, tinta, pentagrama, numeración
-romana, filetes gruesos y una retícula deliberadamente asimétrica.
-De ahí salen los tres mundos que ya existen en la marca de Josefina —el recital
-clásico, la escena multimedia de CreArtBox y el paisaje rural de ADAR— sin
-recurrir al blanco aséptico.
+Modelo: la web de un escultor, o mejor, **el catálogo de su obra**. No una
+landing. La página se comporta como un documento impreso: columna de margen con
+las etiquetas mecanografiadas, texto a una medida de lectura fija, filetes de un
+pixel donde el papel los tendría y cartelas técnicas bajo cada plancha
+fotográfica. Se abre con un **registro** —nombre, oficio, origen, residencia,
+proyectos, título— porque así empieza una ficha de catálogo, no con un titular
+gigante.
 
-**Paleta**
+Lo que **no** hay, deliberadamente: barra flotante, animaciones, revelados al
+hacer scroll, degradados, sombras, esquinas redondeadas, marquesinas,
+secciones numeradas, iconos, tarjetas.
 
-| Token | Valor | Papel de la paleta |
-|---|---|---|
-| `--ink` | `#14100e` | tinta / secciones oscuras |
-| `--paper` | `#efe6d7` | papel de programa |
-| `--paper-2` | `#e4d7c1` | papel a media luz (sección prensa) |
-| `--hueso` | `#f8f3ea` | texto sobre tinta, teclas blancas |
-| `--tinto` | `#8b2331` | acento principal, filetes, citas |
-| `--azafran` | `#e0a132` | acento sobre tinta, apellido del hero |
-| `--musgo` | `#3d5140` | acento del bloque ADAR |
+**Color.** Gris frío de sala de exposición, no crema cálida.
 
-Cada sección declara su tema con `data-shade="ink | paper2 | tinto"`, y los
-tokens `--bg / --fg / --accent` se recalculan solos: no hay colores sueltos.
+| Token | Claro | Oscuro | Uso |
+|---|---|---|---|
+| `--paper` | `#e9eae6` | `#14181a` | fondo |
+| `--paper-2` | `#dfe1dc` | `#1b2023` | fondo de plancha |
+| `--ink` | `#191c1a` | `#dfe2dd` | texto |
+| `--ink-2` | `#4a504c` | `#9aa19b` | etiquetas y cartelas |
+| `--rule` | `#b9bdb6` | `#333a3b` | filetes |
+| `--link` | `#274a72` | `#9dbfe4` | enlaces, y nada más |
 
-**Tipografía**
+Un solo color con carga —el azul de tinta— y sólo para lo que se puede pulsar.
+El resto es monocromo: el color lo traerán las fotografías.
 
-- **Bodoni Moda** (didona de alto contraste) para el gran despliegue: nombre,
-  títulos de sección, citas en cursiva. Es la voz «recital».
-- **Archivo** para textos, navegación y versalitas con tracking abierto.
-  Es la voz «producción».
-- **DM Mono** para números: índices de sección, fechas, años.
+**Tipografía.** Dos voces, ninguna de moda:
 
-**Recursos gráficos recurrentes**
+- **Spectral** (serif holandesa pensada para pantalla) en 300/400/600 para el
+  texto y los títulos, en tamaños moderados: la voz del cuerpo del catálogo.
+- **Courier Prime** para todo lo que es dato: etiquetas de margen, fechas,
+  cartelas, nombres de archivo, navegación. La voz del programa de mano
+  mecanografiado.
 
-- **Teclado** al pie del hero: teclas blancas y negras reales, que se iluminan
-  al pasar el ratón y toca un arpegio al cargar.
-- **Pentagrama**: cinco líneas de fondo cruzando el hero, y el mismo motivo
-  dentro del monograma.
-- **Marquesina** en tinto con las salas donde ha tocado; otra, enorme y en
-  cursiva, cierra el pie de página.
-- **Passe-partout**: cada foto lleva un segundo filete al aire en color acento;
-  si la foto aún no existe, el hueco muestra el monograma fantasma y la ruta
-  del archivo que hay que copiar.
-- **Grano** de papel sobre todo el documento (`feTurbulence` en SVG, sin imagen).
+**Retícula.** Página de 55 rem centrada; cada sección es una fila de dos
+columnas —margen de 9,5 rem alineado a la derecha contra el eje, y el bloque de
+contenido— separadas por un filete. En pantalla estrecha las etiquetas pasan
+arriba, la tabla de agenda se apila y las listas con puntos guía se convierten
+en pares nombre / lugar.
 
 ## El logo
 
-Monograma **JU** construido con dos trazos geométricos —el gancho de la J y la
-U— que *recortan* un pentagrama de cinco líneas, encerrado entre dos escuadras
-que citan la «caja» de CreArtBox. Funciona en un solo color y aguanta 32 px.
-
-- `assets/logo/monograma.svg` — marca completa (papel, pentagrama tinto, tinta).
-- `assets/logo/favicon.svg` — versión negativa para la pestaña del navegador.
-- `assets/logo/logo-lockup.svg` — logotipo horizontal: marca + «Josefina Urraca».
-- En la web, la marca va **en línea** dentro del HTML (cabecera y pie) para que
-  herede el color de su sección.
+En una web así el logotipo **es** el nombre compuesto en Spectral: no hace falta
+un símbolo, y meterlo sería el adorno que sobra. Para los usos en que sí se
+necesita una marca cerrada (firma de correo, cartel, redes) está
+`assets/logo/sello.svg`: un sello de inventario —filete, nombre en serif,
+`PIANISTA` mecanografiado y `NY / AST` al otro extremo—. El favicon
+(`assets/logo/favicon.svg`) es un `ju` en la misma serif sobre tinta.
 
 ## Contenido bilingüe
 
-Cada texto traducible lleva los dos idiomas en el propio elemento:
+Cada texto lleva los dos idiomas en el propio elemento:
 
 ```html
-<span data-es="Agenda" data-en="Calendar">Agenda</span>
+<span data-es="Escenarios" data-en="Venues">Escenarios</span>
 ```
 
-`assets/js/main.js` cambia el `textContent` al pulsar **ES / EN**, actualiza
-`<html lang>` y guarda la preferencia en `localStorage`. Sin JS se ve el
-español (el texto que está escrito en el HTML). El idioma inicial sale de la
-preferencia guardada, y si no hay ninguna, del idioma del navegador.
-
-Para añadir un texto nuevo hay que escribir **siempre los dos atributos**.
+`assets/js/main.js` cambia el `textContent` al pulsar **Es · En**, actualiza
+`<html lang>` y guarda la preferencia en `localStorage`. Sin JavaScript se lee
+en español, que es el texto escrito en el HTML. Al añadir contenido nuevo hay
+que poner **siempre los dos atributos**.
 
 ## Qué queda por rellenar
 
-Son huecos deliberados, marcados en pantalla y en el HTML:
+Huecos deliberados; en pantalla se ven como planchas vacías con el nombre del
+archivo que falta.
 
-1. **Fotografías** → `assets/img/LEEME.md` (nombres, proporciones, cómo
-   sustituir un hueco por un `iframe` de vídeo).
-2. **Correo de contacto** → `hola@josefinaurraca.com` es un ejemplo; cambiar el
-   `mailto:` de la sección 06.
-3. **Fechas de la temporada** → la tabla de la sección 03 tiene tres filas
-   plantilla con `00.00 / por confirmar`. Sustituir fecha, ciudad, sala,
-   programa y cambiar el `<span class="pill">` por un enlace a la venta de
-   entradas.
-4. **Imagen de compartir** → añadir `assets/img/og.jpg` y su `<meta
-   property="og:image">`.
-5. **Enlaces sociales** → revisar Instagram / LinkedIn de la sección 06 y
-   añadir YouTube o Spotify si procede.
+1. **Fotografías** → `retrato.jpg`, `escena.jpg`, `adar.jpg` en `assets/img/`
+   (medidas y detalles en `assets/img/LEEME.md`).
+2. **Correo** → `hola@josefinaurraca.com` es un ejemplo; cambiar el `mailto:`
+   de la sección Contacto.
+3. **Agenda** → las tres filas dicen «por confirmar». Sustituir por las fechas
+   cerradas y, si hay venta, enlazar la sala.
+4. **Compartir** → añadir `assets/img/og.jpg` y su `<meta property="og:image">`.
 
-## Ver y publicar
+## Ver, publicar, previsualizar
 
 ```bash
 python3 -m http.server 8000     # http://localhost:8000
+python3 tools/artefacto.py      # dist/ficha.html, todo en un archivo
 ```
 
 No hay compilación: los archivos se publican tal cual.
 
 - **GitHub Pages** → Settings → Pages → Deploy from branch, carpeta raíz.
-  El repositorio ya incluye `.nojekyll` para que se sirva `assets/` sin filtrar.
+  El repositorio incluye `.nojekyll` para que `assets/` se sirva sin filtrar.
 - **Netlify / Vercel** → arrastrar la carpeta; sin comando de build.
-- Dominio propio: apuntar `josefinaurraca.com` al hosting y revisar la etiqueta
+- Dominio propio: apuntar `josefinaurraca.com` al hosting y revisar
   `<link rel="canonical">`.
+
+`dist/ficha.html` es sólo la vista previa de un archivo; el sitio que se publica
+es `index.html` con sus carpetas.
 
 ## Detalles técnicos
 
-- Sin dependencias ni framework. Las fuentes se cargan desde Google Fonts;
-  si no cargan, la cascada de reserva (Didot / Helvetica / mono del sistema)
-  mantiene el diseño en pie.
-- Accesibilidad: enlace de salto, `aria-current` en la navegación activa,
-  foco visible, tabla de agenda con `<th scope>` y versión apilada en móvil,
-  contraste alto en ambos temas.
-- `prefers-reduced-motion` desactiva marquesinas, arpegio, revelados y el
-  desplazamiento suave.
-- Probado en Chromium a 1440 y 390 px de ancho: sin desbordamiento horizontal
-  ni errores de consola.
+- Sin framework ni dependencias. Las fuentes vienen de Google Fonts y, si no
+  cargan, la reserva (Georgia / Courier New) mantiene el diseño en pie.
+- Tema claro y oscuro según el sistema del visitante, resuelto con tokens.
+- Accesibilidad: navegación por enlaces reales, `caption` y `th scope` en la
+  tabla, foco visible, contraste alto en ambos temas, `prefers-reduced-motion`
+  respetado (aunque no haya nada que animar).
+- Comprobado en Chromium a 1280 y 390 px: sin desbordamiento horizontal ni
+  errores de consola.

@@ -1,51 +1,51 @@
-# Imágenes / Images
+# Fotografías
 
-Los huecos de imagen se muestran como marcos rayados con la ruta esperada.
-En cuanto exista el archivo con ese nombre, la foto aparece sola.
+Mientras el archivo no exista, la plancha se muestra vacía con el nombre que
+espera. En cuanto se copia la foto con ese nombre exacto, aparece sola.
 
-| Archivo | Uso | Proporción | Tamaño recomendado |
+| Archivo | Dónde sale | Proporción | Tamaño |
 |---|---|---|---|
-| `retrato.jpg` | Retrato principal del hero | 4:5 vertical | 1200 × 1500 px |
-| `escena-01.jpg` | Sección *Escucha* — CreArtBox en escena | 4:5 vertical | 1200 × 1500 px |
-| `adar-01.jpg` | Sección *Escucha* — Festival ADAR | 4:5 vertical | 1200 × 1500 px |
-| `og.jpg` | Vista previa al compartir en redes | 1.91:1 | 1200 × 630 px |
+| `retrato.jpg` | Biografía | 4:5 vertical | 1200 × 1500 px |
+| `escena.jpg` | Trabajo — CreArtBox en escena | 4:5 vertical | 1200 × 1500 px |
+| `adar.jpg` | Trabajo — Festival ADAR | 4:5 vertical | 1200 × 1500 px |
+| `og.jpg` | Vista previa al compartir enlace | 1.91:1 | 1200 × 630 px |
 
-## Cómo colocarlas
+Las fotos se muestran a sangre dentro de la plancha (`object-fit: cover`), sin
+filtros: el color de la fotografía es el único color de la página, así que
+conviene que sean buenas y coherentes entre sí.
 
-1. Copia el archivo en esta carpeta con el nombre exacto de la tabla.
-2. Para los huecos de *Escucha*, sustituye en `index.html` el bloque
+## Añadir una plancha nueva
 
 ```html
-<div class="frame frame--ink" data-empty="1">
-  <span class="frame__slot" aria-hidden="true">foto · 4:5</span>
+<figure class="plate">
+  <div class="plate__img" data-file="assets/img/nombre.jpg">
+    <img src="assets/img/nombre.jpg" alt="Descripción real de la imagen"
+         width="1200" height="1500"
+         onerror="this.parentNode.setAttribute('data-empty','')">
+  </div>
+  <figcaption data-es="Pie en español." data-en="Caption in English.">Pie en español.</figcaption>
+</figure>
+```
+
+Dos planchas se ponen una al lado de otra envolviéndolas en `<div class="plates">`.
+Para una imagen ancha, añadir la clase `plate--wide` a la `<figure>` (pasa a 16:9
+y ocupa toda la medida).
+
+## Vídeo
+
+En lugar de la `<img>`, un `iframe` dentro de la misma plancha:
+
+```html
+<div class="plate__img" style="aspect-ratio:16/9">
+  <iframe src="https://www.youtube.com/embed/ID" title="Recital"
+          style="width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe>
 </div>
 ```
 
-por
+## Al compartir el enlace
 
-```html
-<div class="frame frame--ink">
-  <img src="assets/img/escena-01.jpg" alt="CreArtBox en escena" width="1200" height="1500">
-</div>
-```
-
-3. Para insertar un vídeo, cambia el hueco 16:9 por el `iframe` de YouTube/Vimeo:
-
-```html
-<div class="frame frame--ink">
-  <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO"
-          title="Recital de Josefina Urraca"
-          allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
-</div>
-```
-
-4. Cuando exista `og.jpg`, añade en el `<head>`:
+Cuando exista `og.jpg`, añadir en el `<head>` de `index.html`:
 
 ```html
 <meta property="og:image" content="https://josefinaurraca.com/assets/img/og.jpg">
 ```
-
-Las fotos se muestran con un ligero desaturado (`grayscale(.28) contrast(1.06)`)
-para que convivan con la paleta de tinta y papel. Si prefieres color pleno,
-edita `.frame img` en `assets/css/main.css`.

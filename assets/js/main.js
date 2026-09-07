@@ -21,6 +21,6 @@
 
   botones.forEach(b => b.addEventListener('click', () => idioma(b.dataset.setlang)));
 
-  const anio = document.getElementById('year');
+  const anio = document.getElementById('anio');
   if (anio) anio.textContent = new Date().getFullYear();
 })();

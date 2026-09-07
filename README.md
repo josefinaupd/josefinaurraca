@@ -6,104 +6,101 @@ para la pianista **Josefina Urraca**: intérprete, co-fundadora de **CreArtBox**
 Bilingüe ES / EN.
 
 ```
-index.html                 la página, en secciones
-assets/css/main.css        el sistema visual entero, comentado
+index.html                 la página entera
+assets/css/main.css        la hoja de estilo, comentada
 assets/js/main.js          idioma y año. Nada más
-assets/logo/               sello tipográfico y favicon
-assets/img/                fotografías (ver assets/img/LEEME.md)
-tools/artefacto.py         genera dist/ficha.html en un solo archivo
+assets/img/                las fotografías (ver assets/img/LEEME.md)
+assets/logo/favicon.svg    el icono de la pestaña
 ```
 
-## El diseño: «FICHA»
+## El diseño
 
-Modelo: la web de un escultor, o mejor, **el catálogo de su obra**. No una
-landing. La página se comporta como un documento impreso: columna de margen con
-las etiquetas mecanografiadas, texto a una medida de lectura fija, filetes de un
-pixel donde el papel los tendría y cartelas técnicas bajo cada plancha
-fotográfica. Se abre con un **registro** —nombre, oficio, origen, residencia,
-proyectos, título— porque así empieza una ficha de catálogo, no con un titular
-gigante.
+Modelo: la web de un artista plástico —**diegoarribas.com**, escultor— donde la
+obra se ve antes de leerse nada: fotografía a sangre, láminas grandes con el
+rótulo encima de la imagen, menú horizontal sobrio y ningún adorno que compita
+con lo que se muestra. De **creartbox.nyc** viene la voz tipográfica (EB
+Garamond, la misma serif) y de **festivaladar.com**, la fotografía documental:
+conciertos, público, piedra y paisaje.
 
-Lo que **no** hay, deliberadamente: barra flotante, animaciones, revelados al
-hacer scroll, degradados, sombras, esquinas redondeadas, marquesinas,
-secciones numeradas, iconos, tarjetas.
+El orden de la página imita cómo se presenta un intérprete en persona: primero
+se la ve tocando (portada a sangre), luego dice en una frase cómo trabaja
+(declaración), después de dónde viene (biografía), qué hace (los tres
+proyectos), qué ha estudiado y dónde ha tocado (trayectoria), cuándo se la puede
+oír (agenda), qué han escrito de ella (prensa) y cómo escribirle (contacto).
 
-**Color.** Gris frío de sala de exposición, no crema cálida.
+Lo que **no** hay, a propósito: revelados al hacer scroll, tarjetas con sombra,
+iconos, secciones numeradas, degradados decorativos, monoespaciada de programa
+de mano, etiquetas de catálogo ni un solo texto de relleno.
 
-| Token | Claro | Oscuro | Uso |
-|---|---|---|---|
-| `--paper` | `#e9eae6` | `#14181a` | fondo |
-| `--paper-2` | `#dfe1dc` | `#1b2023` | fondo de plancha |
-| `--ink` | `#191c1a` | `#dfe2dd` | texto |
-| `--ink-2` | `#4a504c` | `#9aa19b` | etiquetas y cartelas |
-| `--rule` | `#b9bdb6` | `#333a3b` | filetes |
-| `--link` | `#274a72` | `#9dbfe4` | enlaces, y nada más |
+**Color.** Papel cálido y una sola tinta con carga, el rojo de brasa que sale de
+las propias fotografías, reservado a los enlaces y al foco.
 
-Un solo color con carga —el azul de tinta— y sólo para lo que se puede pulsar.
-El resto es monocromo: el color lo traerán las fotografías.
+| Token | Valor | Uso |
+|---|---|---|
+| `--paper` | `#faf8f4` | fondo |
+| `--paper-hondo` | `#f2eee7` | fondo de la declaración |
+| `--tinta` | `#1b1815` | texto |
+| `--tinta-media` | `#605850` | rótulos, pies, datos secundarios |
+| `--filete` | `#ddd6ca` | líneas de un pixel |
+| `--brasa` | `#8c3b1f` | enlaces y foco |
 
-**Tipografía.** Dos voces, ninguna de moda:
+**Tipografía.** Dos voces, con papeles claros:
 
-- **Spectral** (serif holandesa pensada para pantalla) en 300/400/600 para el
-  texto y los títulos, en tamaños moderados: la voz del cuerpo del catálogo.
-- **Courier Prime** para todo lo que es dato: etiquetas de margen, fechas,
-  cartelas, nombres de archivo, navegación. La voz del programa de mano
-  mecanografiado.
+- **EB Garamond** para todo lo que se lee —texto, citas, títulos, la portada—
+  con sus italiques de verdad, que aquí hacen el trabajo que en otros sitios
+  hace la negrita.
+- La **sans del sistema**, pequeña y en versalitas espaciadas, sólo para lo que
+  es señalización: menú, rótulos de sección, pies de foto, cabeceras de tabla.
 
-**Retícula.** Página de 55 rem centrada; cada sección es una fila de dos
-columnas —margen de 9,5 rem alineado a la derecha contra el eje, y el bloque de
-contenido— separadas por un filete. En pantalla estrecha las etiquetas pasan
-arriba, la tabla de agenda se apila y las listas con puntos guía se convierten
-en pares nombre / lugar.
+**Retícula.** Caja de 82 rem para las imágenes y los tres bloques de
+trayectoria; medida de lectura de 38 rem para el texto corrido, que nunca se
+estira a todo el ancho. La biografía es retrato más columna de texto; los
+proyectos, láminas a todo el ancho de la caja con el texto debajo a medida de
+lectura. Por debajo de 56 rem todo se apila y las tres columnas de trayectoria
+pasan a una.
 
-## El logo
+## Bilingüe
 
-En una web así el logotipo **es** el nombre compuesto en Spectral: no hace falta
-un símbolo, y meterlo sería el adorno que sobra. Para los usos en que sí se
-necesita una marca cerrada (firma de correo, cartel, redes) está
-`assets/logo/sello.svg`: un sello de inventario —filete, nombre en serif,
-`PIANISTA` mecanografiado y `NY / AST` al otro extremo—. El favicon
-(`assets/logo/favicon.svg`) es un `ju` en la misma serif sobre tinta.
-
-## Contenido bilingüe
-
-Cada texto lleva los dos idiomas en el propio elemento:
+Cada texto lleva sus dos versiones en el propio HTML:
 
 ```html
-<span data-es="Escenarios" data-en="Venues">Escenarios</span>
+<span data-es="Trayectoria" data-en="Background">Trayectoria</span>
 ```
 
 `assets/js/main.js` cambia el `textContent` al pulsar **Es · En**, actualiza
 `<html lang>` y guarda la preferencia en `localStorage`. Sin JavaScript se lee
-en español, que es el texto escrito en el HTML. Al añadir contenido nuevo hay
-que poner **siempre los dos atributos**.
+en español, que es el texto escrito en el HTML.
 
-## Qué queda por rellenar
+Dos reglas al añadir contenido: **siempre los dos atributos**, y el elemento que
+los lleva **no puede tener hijos** (se le reescribe el texto completo). Si hace
+falta una parte fija —el nombre de un premio, una ciudad— va en un `<span>`
+hermano, como en las listas de trayectoria.
 
-Huecos deliberados; en pantalla se ven como planchas vacías con el nombre del
-archivo que falta.
+## Qué queda por confirmar
 
-1. **Fotografías** → `retrato.jpg`, `escena.jpg`, `adar.jpg` en `assets/img/`
-   (medidas y detalles en `assets/img/LEEME.md`).
-2. **Correo** → `hola@josefinaurraca.com` es un ejemplo; cambiar el `mailto:`
-   de la sección Contacto.
-3. **Agenda** → las tres filas dicen «por confirmar». Sustituir por las fechas
-   cerradas y, si hay venta, enlazar la sala.
-4. **Compartir** → añadir `assets/img/og.jpg` y su `<meta property="og:image">`.
+1. **Correo** → `hola@josefinaurraca.com` viene del borrador anterior; hay que
+   confirmar la dirección pública real antes de difundir el enlace. Está
+   marcado con un comentario `REVISAR` en la sección de contacto.
+2. **Agenda** → la fila de ADAR 2027 está anunciada como VII edición en
+   preparación; las dos de la temporada de Nueva York dicen «temporada 2026—27»
+   porque las fechas concretas aún no están cerradas. Sustituir por día, sala y
+   enlace de entradas en cuanto se cierren.
+3. **Fotografías** → las siete imágenes son recortes de las que ya estaban en
+   josefinaurraca.com y en el archivo de ADAR. Falta acreditar a los fotógrafos:
+   cuando se sepa, el crédito va en el pie de cada foto.
+4. **Instagram** → apunta a `@creartboxnyc`; si hay cuenta personal, cambiarla.
 
-## Ver, publicar, previsualizar
+## Ver y publicar
 
 ```bash
 python3 -m http.server 8000     # http://localhost:8000
-python3 tools/artefacto.py      # dist/ficha.html, todo en un archivo
 ```
 
 No hay compilación: los archivos se publican tal cual.
 
-**GitHub Pages** ya está en marcha. `.github/workflows/pages.yml` se dispara con
-cada push a la rama por defecto (y a mano desde la pestaña Actions), copia
-`index.html`, `assets/` y `.nojekyll` a `_site/` y lo despliega. Fuera quedan
-`README.md`, `dist/` y `tools/`, que no son el sitio.
+**GitHub Pages** está en marcha. `.github/workflows/pages.yml` copia
+`index.html`, `assets/` y `.nojekyll` a `_site/` y lo despliega; `README.md`
+queda fuera, que no es el sitio.
 
     https://josefinaupd.github.io/josefinaurraca/
 
@@ -112,21 +109,18 @@ en *Custom domain* (GitHub añade el archivo `CNAME` al repositorio), y en el DN
 del dominio apuntar los registros `A` de la raíz a las IP de GitHub Pages
 —`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`— y
 un `CNAME` de `www` a `josefinaupd.github.io`. Después, activar *Enforce HTTPS*.
-El `<link rel="canonical">` del HTML ya apunta a `josefinaurraca.com`.
-
-Alternativa sin Actions: **Netlify / Vercel** → arrastrar la carpeta, sin
-comando de build.
-
-`dist/ficha.html` es sólo la vista previa de un archivo; el sitio que se publica
-es `index.html` con sus carpetas.
+El `<link rel="canonical">` y la imagen de `og:image` ya apuntan a
+`josefinaurraca.com`.
 
 ## Detalles técnicos
 
-- Sin framework ni dependencias. Las fuentes vienen de Google Fonts y, si no
-  cargan, la reserva (Georgia / Courier New) mantiene el diseño en pie.
-- Tema claro y oscuro según el sistema del visitante, resuelto con tokens.
-- Accesibilidad: navegación por enlaces reales, `caption` y `th scope` en la
-  tabla, foco visible, contraste alto en ambos temas, `prefers-reduced-motion`
-  respetado (aunque no haya nada que animar).
-- Comprobado en Chromium a 1280 y 390 px: sin desbordamiento horizontal ni
-  errores de consola.
+- Sin framework ni dependencias. EB Garamond viene de Google Fonts y, si no
+  carga, la reserva (Garamond / Palatino / Georgia) mantiene el diseño en pie.
+- Imágenes con `width`/`height` declarados y `loading="lazy"` salvo la portada,
+  para que no salte la página al cargar.
+- Accesibilidad: enlaces reales, `caption` y `th scope` en la tabla de agenda,
+  `alt` descriptivo en cada foto, foco visible, texto de la portada sobre un
+  velo oscuro para que contraste sobre la fotografía, `prefers-reduced-motion`
+  respetado.
+- Comprobado en Chromium a 1440 y 390 px: sin desbordamiento horizontal, sin
+  imágenes rotas y sin errores de consola.

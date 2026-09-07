@@ -1,51 +1,68 @@
 # Fotografías
 
-Mientras el archivo no exista, la plancha se muestra vacía con el nombre que
-espera. En cuanto se copia la foto con ese nombre exacto, aparece sola.
+Las imágenes de esta carpeta son recortes ya preparados para web. Los originales
+(en resolución completa) están en josefinaurraca.com y en el archivo de
+CreArtBox / Festival ADAR; conviene guardarlos aparte antes de recortar.
 
-| Archivo | Dónde sale | Proporción | Tamaño |
-|---|---|---|---|
-| `retrato.jpg` | Biografía | 4:5 vertical | 1200 × 1500 px |
-| `escena.jpg` | Trabajo — CreArtBox en escena | 4:5 vertical | 1200 × 1500 px |
-| `adar.jpg` | Trabajo — Festival ADAR | 4:5 vertical | 1200 × 1500 px |
-| `og.jpg` | Vista previa al compartir enlace | 1.91:1 | 1200 × 630 px |
+| Archivo | Dónde sale | Medidas |
+|---|---|---|
+| `portada.jpg` | Portada, a sangre | 2000 × 1125 (16:9) |
+| `retrato.jpg` | Biografía | 1100 × 1375 (4:5) |
+| `duo.jpg` | Banda entre Biografía y Proyectos | 1500 × 1000 (3:2) |
+| `creartbox.jpg` | Lámina de CreArtBox | 1500 × 1000 (3:2) |
+| `adar.jpg` | Lámina del Festival ADAR | 1500 × 1000 (3:2) |
+| `estudio.jpg` | Estudio de piano | 400 × 500 (4:5) |
+| `og.jpg` | Vista previa al compartir el enlace | 1200 × 628 |
 
-Las fotos se muestran a sangre dentro de la plancha (`object-fit: cover`), sin
-filtros: el color de la fotografía es el único color de la página, así que
-conviene que sean buenas y coherentes entre sí.
+Se muestran a sangre dentro de su hueco (`object-fit: cover`) y sin filtros: el
+color de la fotografía es el único color de la página, salvo el rojo de brasa de
+los enlaces.
 
-## Añadir una plancha nueva
+## Cambiar una foto
+
+Basta sobreescribir el archivo con el mismo nombre y proporción. Si la nueva
+imagen tiene el motivo descentrado, se ajusta con `object-position` en la regla
+correspondiente de `assets/css/main.css` (la portada ya lo usa: `48% 38%` en
+pantalla ancha, `46% 32%` en móvil, para que la cara no se recorte).
+
+Al cambiar una foto hay que revisar dos textos: el `alt` de la `<img>`, que
+describe lo que se ve, y el pie (`figcaption` o `p.pie`), que dice dónde se hizo.
+
+## Añadir una lámina de proyecto
 
 ```html
-<figure class="plate">
-  <div class="plate__img" data-file="assets/img/nombre.jpg">
-    <img src="assets/img/nombre.jpg" alt="Descripción real de la imagen"
-         width="1200" height="1500"
-         onerror="this.parentNode.setAttribute('data-empty','')">
+<article class="lamina">
+  <figure class="lamina__foto">
+    <img src="assets/img/nombre.jpg" width="1500" height="1000" loading="lazy"
+         alt="Descripción real de la imagen">
+    <figcaption>
+      <span class="lamina__rotulo">Nombre del proyecto</span>
+      <span class="lamina__donde" data-es="Lugar · años · papel" data-en="Place · years · role">Lugar · años · papel</span>
+    </figcaption>
+  </figure>
+  <div class="lamina__texto">
+    <p data-es="Texto en español." data-en="Text in English.">Texto en español.</p>
+    <a class="sitio" href="https://..." rel="noopener">dominio.com</a>
   </div>
-  <figcaption data-es="Pie en español." data-en="Caption in English.">Pie en español.</figcaption>
-</figure>
+</article>
 ```
 
-Dos planchas se ponen una al lado de otra envolviéndolas en `<div class="plates">`.
-Para una imagen ancha, añadir la clase `plate--wide` a la `<figure>` (pasa a 16:9
-y ocupa toda la medida).
-
-## Vídeo
-
-En lugar de la `<img>`, un `iframe` dentro de la misma plancha:
+Para una banda de imagen a todo el ancho, fuera de cualquier sección:
 
 ```html
-<div class="plate__img" style="aspect-ratio:16/9">
-  <iframe src="https://www.youtube.com/embed/ID" title="Recital"
-          style="width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe>
+<div class="banda">
+  <img src="assets/img/nombre.jpg" width="1500" height="1000" loading="lazy" alt="...">
+  <p class="pie" data-es="Pie en español." data-en="Caption in English.">Pie en español.</p>
 </div>
 ```
 
-## Al compartir el enlace
+## Vídeo
 
-Cuando exista `og.jpg`, añadir en el `<head>` de `index.html`:
+En lugar de la `<img>`, un `iframe` en un hueco con proporción fija:
 
 ```html
-<meta property="og:image" content="https://josefinaurraca.com/assets/img/og.jpg">
+<div class="lamina__foto" style="aspect-ratio:16/9">
+  <iframe src="https://www.youtube.com/embed/ID" title="Recital"
+          style="width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe>
+</div>
 ```

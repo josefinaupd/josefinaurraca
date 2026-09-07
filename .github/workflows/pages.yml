@@ -2,7 +2,7 @@ name: Publicar en GitHub Pages
 
 on:
   push:
-    branches: [claude/personal-website-design-1jf75a, main]
+    branches: [claude/web-design-no-ai-v8a2gv, claude/personal-website-design-1jf75a, main]
   workflow_dispatch:
 
 permissions:
@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v4
 
       # Sólo se publica el sitio: index.html, assets y .nojekyll.
-      # Quedan fuera README, dist (vista previa) y tools.
+      # Queda fuera README.md, que no es el sitio.
       - name: Preparar el sitio
         run: |
           mkdir -p _site

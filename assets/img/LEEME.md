@@ -6,16 +6,18 @@ CreArtBox / Festival ADAR; conviene guardarlos aparte antes de recortar.
 
 | Archivo | Dónde sale | Medidas |
 |---|---|---|
-| `portada.jpg` | `index.html`, debajo del texto | 2000 × 1125 (16:9) |
-| `retrato.jpg` | `trayectoria.html`, al final | 1100 × 1375 (4:5) |
-| `creartbox.jpg` | `creartbox.html`, al final | 1500 × 1000 (3:2) |
-| `adar.jpg` | `adar.html`, al final | 1500 × 1000 (3:2) |
-| `duo.jpg` | `estudio.html`, al final | 1500 × 1000 (3:2) |
+| `portada.jpg` | Carrusel de apertura (1.ª) y banda de Agenda | 2000 × 1125 (16:9) |
+| `creartbox.jpg` | Carrusel (2.ª), tarjeta y banda de CreArtBox | 1500 × 1000 (3:2) |
+| `adar.jpg` | Carrusel (3.ª), tarjeta y banda de ADAR | 1500 × 1000 (3:2) |
+| `duo.jpg` | Carrusel (4.ª), tarjeta del estudio y banda de Prensa | 1500 × 1000 (3:2) |
+| `retrato.jpg` | Banda de Trayectoria | 1100 × 1375 (4:5) |
 | `og.jpg` | Vista previa al compartir el enlace | 1200 × 628 |
 
-**Una fotografía por página como máximo, y siempre al final, debajo del
-texto.** Es la regla del sitio: primero se cuenta y después se ve. Se muestran
-al ancho de la columna, sin filtros y sin recorte forzado.
+**Hacen falta más.** Con este diseño las fotografías mandan: el carrusel las
+pone a sangre a casi toda la pantalla y las mismas cuatro se repiten en las
+tarjetas y en las bandas. Lo suyo sería una apaisada buena por proyecto y dos o
+tres más para el carrusel, todas horizontales y de al menos 2000 px de ancho.
+El retrato vertical sólo funciona en la banda de Trayectoria, donde se recorta.
 
 ## Cambiar una foto
 

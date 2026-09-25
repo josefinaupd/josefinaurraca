@@ -6,13 +6,13 @@ CreArtBox / Festival ADAR; conviene guardarlos aparte antes de recortar.
 
 | Archivo | Dónde sale | Medidas | Origen |
 |---|---|---|---|
-| `adar-josefina.jpg` | Carrusel 1.ª | 1600 × 900 | festivaladar.com |
-| `portada.jpg` | Carrusel 2.ª | 2000 × 1125 | josefinaurraca.com |
-| `piano-azul.jpg` | Carrusel 3.ª | 1361 × 766 | creartbox.nyc |
-| `ensemble.jpg` | Carrusel 4.ª y banda de Prensa | 1600 × 1066 | creartbox.nyc |
+| `adar-iglesia.jpg` | Portada | 1500 × 1000 | festivaladar.com |
+| `adar-josefina.jpg` | Sin usar | 1600 × 900 | festivaladar.com |
+| `portada.jpg` | Sin usar | 2000 × 1125 | josefinaurraca.com |
+| `piano-azul.jpg` | Página de CreArtBox | 1361 × 766 | creartbox.nyc |
+| `ensemble.jpg` | Banda de Prensa | 1600 × 1066 | creartbox.nyc |
 | `grupo.jpg` | Tarjeta y banda de CreArtBox | 1600 × 1067 | creartbox.nyc |
 | `adar-claustro.jpg` | Tarjeta de ADAR y banda de Agenda | 1500 × 1000 | festivaladar.com |
-| `adar-iglesia.jpg` | Banda de la página de ADAR | 1500 × 1000 | festivaladar.com |
 | `creartbox.jpg` | Banda de la página de CreArtBox | 1500 × 1000 | josefinaurraca.com |
 | `duo.jpg` | Tarjeta y banda del Estudio | 1500 × 1000 | josefinaurraca.com |
 | `retrato.jpg` | Banda de Trayectoria | 1100 × 1375 | josefinaurraca.com |

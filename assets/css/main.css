@@ -235,6 +235,29 @@ a:focus-visible{outline:2px solid var(--negro);outline-offset:3px}
   .archivo .cuando{margin-bottom:.1rem}
 }
 
+/* --- Cita suelta dentro de una página ------------------------------------ */
+
+.cita-obra{margin:1.3rem 0;padding-left:1.1rem;border-left:2px solid var(--negro)}
+.cita-obra p{font-size:1.0625rem;line-height:1.45}
+.cita-obra cite{display:block;margin-top:.5rem;font-style:normal;
+  font-family:var(--titulo);font-size:.6875rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--gris)}
+
+/* --- Hemeroteca ---------------------------------------------------------- */
+
+.hemeroteca{margin-top:clamp(1.25rem,2.5vw,1.75rem)}
+.hemeroteca > li{display:grid;grid-template-columns:13rem minmax(0,1fr);
+  gap:.1rem 1.25rem;align-items:baseline;padding:.65rem 0;
+  border-bottom:1px solid var(--linea)}
+.hemeroteca > li:first-child{border-top:1px solid var(--negro)}
+.hemeroteca .medio{font-family:var(--titulo);font-size:.75rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--gris);font-variant-numeric:tabular-nums}
+.hemeroteca .titular{font-size:.9375rem;line-height:1.4}
+@media (max-width:44rem){
+  .hemeroteca > li{grid-template-columns:minmax(0,1fr)}
+  .hemeroteca .medio{margin-bottom:.15rem}
+}
+
 /* --- Prensa -------------------------------------------------------------- */
 
 .recortes > li{padding-block:clamp(1.1rem,2vw,1.5rem);

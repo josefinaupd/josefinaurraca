@@ -41,7 +41,17 @@ Su portada tampoco es un carrusel: una fotografía fija con su firma encima, un
 dato suelto debajo (`Madrid (1957)`) y después una entrada por sección que
 lleva a su página. Aquí igual: la foto con el nombre encima,
 `Pianista · Nueva York y Asturias`, y cuatro entradas —Proyectos, Agenda,
-Trayectoria, Prensa— cada una con una frase y su enlace.
+Trayectoria, Prensa— a dos columnas, cada una con una frase y su enlace.
+
+**La portada abre con la obra, no con un retrato**, igual que él abre con una
+escultura y no con su cara: la iglesia románica iluminada de azul de un
+concierto de ADAR. Las fotografías de ella están dentro, en Proyectos,
+Trayectoria y Prensa.
+
+**Densidad.** El texto va a 15 px como el suyo, el `letter-spacing` de los
+titulares se ha recortado de `.2em` a `.14em`, el aire entre bloques ha bajado
+a la mitad y hay bandas de gris `#f2f2f2` —un color de su propio tema— para que
+la página no sea un blanco continuo.
 
 **Deliberadamente distinto de sus dos proyectos.** Es su web personal, no la
 del colectivo ni la del festival, así que no comparte nada con ellas:
@@ -98,22 +108,18 @@ las nueve (buscar `<nav class="navegacion"`).
 
 ## Qué queda por confirmar
 
-1. **Correo** → `hola@josefinaurraca.com` viene del primer borrador; hay que
-   confirmar la dirección pública real antes de difundir el enlace. Está
-   marcado con un comentario `REVISAR` en `contacto.html`.
-2. **Agenda** → ADAR 2027 figura como VII edición en preparación, y las dos
+1. **Agenda** → ADAR 2027 figura como VII edición en preparación, y las dos
    fechas de Nueva York como «temporada 2026–27» porque las concretas no están
    cerradas. Sustituir por día, sala y enlace de entradas en cuanto se cierren.
-3. **Fotografías** → las cinco imágenes son recortes de las que ya estaban en
+2. **Fotografías** → son recortes de las que ya estaban en
    josefinaurraca.com y en el archivo de ADAR. El pie de página dice «crédito
    por acreditar»: ahí van los nombres de los fotógrafos en cuanto se sepan.
    Con este diseño hacen falta más y mejores: el carrusel pide cuatro buenas y
    apaisadas.
-4. **Instagram** → apunta a `@creartboxnyc`; si hay cuenta personal, cambiarla.
-5. **Textos en primera persona** → las páginas de proyectos y el estudio están
+3. **Instagram** → apunta a `@creartboxnyc`; si hay cuenta personal, cambiarla.
+4. **Textos en primera persona** → las páginas de proyectos y el estudio están
    escritas en primera persona («toco», «doy clase»).
-6. **«Contratar»** → es el equivalente del «Book Now» de la plantilla. Si suena
-   demasiado comercial, cambiar por «Escribir» en la cabecera y el cajón.
+
 
 ## Ver y publicar
 

@@ -217,6 +217,24 @@ a:focus-visible{outline:2px solid var(--negro);outline-offset:3px}
   margin-top:clamp(1.75rem,3vw,2.5rem)}
 .columnas h2{font-size:.9375rem;letter-spacing:.14em;margin-bottom:1rem}
 
+/* --- Archivo de eventos pasados ------------------------------------------ */
+
+.anio{margin-top:clamp(1.5rem,3vw,2.25rem)}
+.anio > h2{font-size:.9375rem;letter-spacing:.16em;padding-bottom:.45rem;
+  border-bottom:1px solid var(--negro)}
+.archivo > li{display:grid;grid-template-columns:6rem minmax(0,1fr);
+  gap:.1rem 1.25rem;align-items:baseline;padding:.6rem 0;
+  border-bottom:1px solid var(--linea)}
+.archivo .cuando{font-family:var(--titulo);font-size:.8125rem;letter-spacing:.08em;
+  font-variant-numeric:tabular-nums;color:var(--gris);white-space:nowrap}
+.archivo .que{font-size:.9375rem;line-height:1.35}
+.archivo .sitio,.archivo .nota{font-size:.8125rem;color:var(--gris)}
+.archivo .nota{margin-top:.05rem}
+@media (max-width:40rem){
+  .archivo > li{grid-template-columns:minmax(0,1fr)}
+  .archivo .cuando{margin-bottom:.1rem}
+}
+
 /* --- Prensa -------------------------------------------------------------- */
 
 .recortes > li{padding-block:clamp(1.1rem,2vw,1.5rem);

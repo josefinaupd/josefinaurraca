@@ -59,6 +59,18 @@ Machine, pero `web.archive.org` está bloqueado por la política de salida de
 este entorno. No hizo falta: la página *Events* actual, leída por la API REST
 de WordPress (`/wp-json/wp/v2/pages`), ya tenía el archivo completo.
 
+**La prensa** tiene dos mitades: cuatro citas comprobadas y una hemeroteca de
+quince recortes del Festival ADAR (medio, fecha y titular), sacada de
+`festivaladar.com/es/prensa/`. Y las citas no viven sólo ahí: la de Mundo
+Clásico está en Trayectoria, las de The New Yorker y Broadway World en la
+página de CreArtBox, y un titular de El Comercio en la de ADAR.
+
+> **Cuidado con dos citas de creartbox.nyc que NO son suyas.** «Marvelous and
+> lyrical playing» es de The Strad sobre la violinista Emilie-Anne Gendron, y
+> «her sense of joyful virtuosity» es de South Florida Classical Review sobre
+> la chelista Julia Yang. Están en la misma página de CreArtBox, junto a la
+> suya, y es fácil confundirlas. No se usan aquí.
+
 **La agenda sale de creartbox.nyc**, de la página de conciertos del colectivo:
 doce fechas reales de la temporada 2026-27, con sala y ciudad. Ojo, es el
 calendario del colectivo entero; si en alguna de esas fechas no toca ella, hay

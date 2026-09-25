@@ -7,10 +7,10 @@ ADAR** (Asturias, 2021). Bilingüe ES / EN.
 
 ```
 index.html         Inicio           agenda.html        Agenda
-proyectos.html     Proyectos        trayectoria.html   Trayectoria
-  creartbox.html     CreArtBox      prensa.html        Prensa
-  adar.html          Festival ADAR  contacto.html      Contacto
-  estudio.html       Estudio de piano
+proyectos.html     Proyectos        pasados.html       Archivo
+  creartbox.html     CreArtBox      trayectoria.html   Trayectoria
+  adar.html          Festival ADAR  prensa.html        Prensa
+  estudio.html       Estudio de piano  contacto.html   Contacto
 
 assets/css/main.css        la hoja de estilo, comentada
 assets/js/main.js          idioma, año, carrusel y cajón de móvil
@@ -46,6 +46,18 @@ Trayectoria, Prensa— a dos columnas, cada una con una frase y su enlace.
 **La portada no la describe.** Bajo su nombre no hay una frase de presentación:
 el primer bloque abre con la cita que tenía en su web anterior —«Ser meticulosa,
 y libre…», suya— y después va el texto.
+
+**El archivo** (`pasados.html`) son 108 conciertos y proyectos de 2013 a 2026,
+agrupados por año. Sale de dos sitios: de **2021 a 2026**, de la página *Events*
+de josefinaurraca.com, que es la única que trae el **repertorio** de cada
+concierto; de **2013 a 2020**, del archivo de creartbox.nyc, que es lo que
+llega más atrás. Las fechas van en numérico (`17.10`, `03–16.08`) bajo el año,
+que se lee igual en los dos idiomas y evita traducir 108 fechas.
+
+Se intentó también recuperar la versión antigua de su web por el Wayback
+Machine, pero `web.archive.org` está bloqueado por la política de salida de
+este entorno. No hizo falta: la página *Events* actual, leída por la API REST
+de WordPress (`/wp-json/wp/v2/pages`), ya tenía el archivo completo.
 
 **La agenda sale de creartbox.nyc**, de la página de conciertos del colectivo:
 doce fechas reales de la temporada 2026-27, con sala y ciudad. Ojo, es el

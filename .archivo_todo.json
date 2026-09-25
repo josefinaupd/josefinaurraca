@@ -1,0 +1,974 @@
+[
+ {
+  "anio": 2026,
+  "mes": 8,
+  "dia": 3,
+  "fecha": "03–16.08",
+  "titulo": "Festival ADAR",
+  "sitio": "Asturias, Spain",
+  "rep": ""
+ },
+ {
+  "anio": 2026,
+  "mes": 3,
+  "dia": 30,
+  "fecha": "30.03",
+  "titulo": "Outreach concert",
+  "sitio": "Chamber Music Lehigh Valley, PA",
+  "rep": "Brahms · Casarrubios · Telemann"
+ },
+ {
+  "anio": 2026,
+  "mes": 3,
+  "dia": 29,
+  "fecha": "29.03",
+  "titulo": "Tour",
+  "sitio": "Chamber Music Lehigh Valley, PA",
+  "rep": "Brahms · Martin · Telemann · Mussorgsky"
+ },
+ {
+  "anio": 2026,
+  "mes": 2,
+  "dia": 6,
+  "fecha": "06.02",
+  "titulo": "Threshold",
+  "sitio": "DiMenna Center, NY",
+  "rep": "Beethoven · Boulanger · Franck · Kurtág"
+ },
+ {
+  "anio": 2025,
+  "mes": 12,
+  "dia": 12,
+  "fecha": "12.12",
+  "titulo": "Musica Ricercata",
+  "sitio": "DiMenna Center, NY",
+  "rep": "Ligeti · Dvořák · Benton"
+ },
+ {
+  "anio": 2025,
+  "mes": 11,
+  "dia": 25,
+  "fecha": "25.11",
+  "titulo": "Ringwood Music Series",
+  "sitio": "Ringwood Friends of Music",
+  "rep": "Telemann · Dvořák · Mussorgsky"
+ },
+ {
+  "anio": 2025,
+  "mes": 11,
+  "dia": 23,
+  "fecha": "23.11",
+  "titulo": "Music on Madison, NY",
+  "sitio": "Madison Avenue Presbyterian Church, NY",
+  "rep": "Couperin · Messiaen · Ravel · Debussy · Poulenc"
+ },
+ {
+  "anio": 2025,
+  "mes": 11,
+  "dia": 16,
+  "fecha": "16.11",
+  "titulo": "Chaminade Music Series",
+  "sitio": "Yonkers, NY",
+  "rep": "Couperin · Messiaen · Ravel · Debussy · Poulenc"
+ },
+ {
+  "anio": 2025,
+  "mes": 10,
+  "dia": 17,
+  "fecha": "17.10",
+  "titulo": "Beyond the Surface",
+  "sitio": "The DiMenna Center, NY",
+  "rep": "Cholodenko · Ravel · Brahms"
+ },
+ {
+  "anio": 2025,
+  "mes": 10,
+  "dia": 4,
+  "fecha": "04.10",
+  "titulo": "Crystal Music",
+  "sitio": "Oviedo, Spain",
+  "rep": "Rachmaninoff · Richter · Debussy"
+ },
+ {
+  "anio": 2025,
+  "mes": 8,
+  "dia": 17,
+  "fecha": "17.08",
+  "titulo": "Festival ADAR",
+  "sitio": "Asturias, Spain",
+  "rep": "Boccherini · Mussorgsky · Telemann"
+ },
+ {
+  "anio": 2025,
+  "mes": 8,
+  "dia": 16,
+  "fecha": "16.08",
+  "titulo": "Festival ADAR",
+  "sitio": "Leiguarda, Asturias, Spain",
+  "rep": "Casarrubios · Dvořák · Debussy · Laporta · Boccherini"
+ },
+ {
+  "anio": 2025,
+  "mes": 8,
+  "dia": 14,
+  "fecha": "14.08",
+  "titulo": "Festival ADAR",
+  "sitio": "Villanueva de Oscos, Asturias, Spain",
+  "rep": "Mussorgsky · Telemann · Falla"
+ },
+ {
+  "anio": 2025,
+  "mes": 8,
+  "dia": 12,
+  "fecha": "12.08",
+  "titulo": "Festival ADAR",
+  "sitio": "Tineo, Asturias, Spain",
+  "rep": "Mussorgsky · Telemann · Falla"
+ },
+ {
+  "anio": 2025,
+  "mes": 8,
+  "dia": 9,
+  "fecha": "09.08",
+  "titulo": "Festival ADAR",
+  "sitio": "Leiguarda, Asturias, Spain",
+  "rep": "Debussy · Bach · Telemann"
+ },
+ {
+  "anio": 2025,
+  "mes": 8,
+  "dia": 8,
+  "fecha": "08.08",
+  "titulo": "Festival ADAR",
+  "sitio": "Llanes, Asturias, Spain",
+  "rep": "Debussy · Laporta · Telemann · Couperin"
+ },
+ {
+  "anio": 2025,
+  "mes": 6,
+  "dia": 7,
+  "fecha": "07.06",
+  "titulo": "Approaching Zero",
+  "sitio": "Flushing Town Hall, NY",
+  "rep": "Richter · Laporta · Bach"
+ },
+ {
+  "anio": 2025,
+  "mes": 5,
+  "dia": 4,
+  "fecha": "04.05",
+  "titulo": "Perennial",
+  "sitio": "The Mark Morris Center, NY",
+  "rep": "Casarrubios · Stravinsky"
+ },
+ {
+  "anio": 2025,
+  "mes": 5,
+  "dia": 3,
+  "fecha": "03.05",
+  "titulo": "Perennial",
+  "sitio": "The Mark Morris Center, NY",
+  "rep": "Casarrubios · Stravinsky"
+ },
+ {
+  "anio": 2025,
+  "mes": 2,
+  "dia": 8,
+  "fecha": "08.02",
+  "titulo": "Arts Rock Music Series",
+  "sitio": "The Angel, Nyack",
+  "rep": "Mozart · Mahler · Dvořák · Shaw · Debussy"
+ },
+ {
+  "anio": 2025,
+  "mes": 2,
+  "dia": 7,
+  "fecha": "07.02",
+  "titulo": "Evolving Threads",
+  "sitio": "DiMenna Center, NY",
+  "rep": "Mozart · Brahms · Mahler · Debussy · Shaw"
+ },
+ {
+  "anio": 2024,
+  "mes": 12,
+  "dia": 11,
+  "fecha": "11.12",
+  "titulo": "X is the new Y",
+  "sitio": "DiMenna Center, NY",
+  "rep": "Martin · Selin · Mozart · Dvořák"
+ },
+ {
+  "anio": 2024,
+  "mes": 9,
+  "dia": 30,
+  "fecha": "30.09",
+  "titulo": "Spanish Steps",
+  "sitio": "Lytric Chamber Music Society, NY",
+  "rep": "Casarrubios · Turina · Soler · Granados · Falla"
+ },
+ {
+  "anio": 2024,
+  "mes": 8,
+  "dia": 8,
+  "fecha": "08–18.08",
+  "titulo": "Festival ADAR",
+  "sitio": "Asturias, Spain",
+  "rep": "Artistic Director"
+ },
+ {
+  "anio": 2024,
+  "mes": 2,
+  "dia": 11,
+  "fecha": "11.02",
+  "titulo": "Saugerties Pro Musica",
+  "sitio": "Saugerties Pro Musica, NY",
+  "rep": "Mozart · Schumann · Nikolayeva · Debussy · Wysocki"
+ },
+ {
+  "anio": 2024,
+  "mes": 2,
+  "dia": 9,
+  "fecha": "09.02",
+  "titulo": "Opus 71",
+  "sitio": "Theater 71, NYC",
+  "rep": "Mozart · Schumann · Nikolayeva · Debussy · Wysocki"
+ },
+ {
+  "anio": 2023,
+  "mes": 12,
+  "dia": 17,
+  "fecha": "17.12",
+  "titulo": "Sounds of the Dome",
+  "sitio": "Oscar Niemeyer Cultural Center, Asturias",
+  "rep": "Janáček · Messiaen · Muhly · Franck"
+ },
+ {
+  "anio": 2023,
+  "mes": 12,
+  "dia": 10,
+  "fecha": "10.12",
+  "titulo": "Circle Noir (Part II)",
+  "sitio": "The William Vale, Brooklyn",
+  "rep": "Bach · Vivaldi · Debussy · Selin · Pärt"
+ },
+ {
+  "anio": 2023,
+  "mes": 12,
+  "dia": 9,
+  "fecha": "09.12",
+  "titulo": "Mountains We Love to Climb",
+  "sitio": "Culture Lab LIC, New York",
+  "rep": "Couperin · Vivaldi · Mozart · Selin"
+ },
+ {
+  "anio": 2023,
+  "mes": 12,
+  "dia": 8,
+  "fecha": "08.12",
+  "titulo": "Masked Sounds",
+  "sitio": "Culture Lab LIC, New York",
+  "rep": "Bruch · Debussy · Strauss · Schram"
+ },
+ {
+  "anio": 2023,
+  "mes": 12,
+  "dia": 7,
+  "fecha": "07.12",
+  "titulo": "Echoes of Solitude",
+  "sitio": "Culture Lab LIC, New York",
+  "rep": "Bruch · Debussy · Strauss · Schram"
+ },
+ {
+  "anio": 2023,
+  "mes": 11,
+  "dia": 14,
+  "fecha": "14.11",
+  "titulo": "Ten Pages",
+  "sitio": "The DiMenna Center, New York",
+  "rep": "Mussorgsky · Casarrubios · Saint-Saëns · Rachmaninoff"
+ },
+ {
+  "anio": 2023,
+  "mes": 11,
+  "dia": 12,
+  "fecha": "12.11",
+  "titulo": "Circle Noir (Part I)",
+  "sitio": "The William Vale, Brooklyn",
+  "rep": "Richter · Webern · Casarrubios · Mendelssohn · Grebla · Gaubert"
+ },
+ {
+  "anio": 2023,
+  "mes": 10,
+  "dia": 14,
+  "fecha": "14.10",
+  "titulo": "Open Door",
+  "sitio": "Queens Public Library, Astoria",
+  "rep": ""
+ },
+ {
+  "anio": 2023,
+  "mes": 8,
+  "dia": 13,
+  "fecha": "13.08",
+  "titulo": "Festival ADAR",
+  "sitio": "Leiguarda, Asturias, Spain",
+  "rep": "Boulanger · Telemann · Turina · Granados · Pärt"
+ },
+ {
+  "anio": 2023,
+  "mes": 8,
+  "dia": 11,
+  "fecha": "11.08",
+  "titulo": "Festival ADAR",
+  "sitio": "Colunga, Asturias, Spain",
+  "rep": "Boulanger · Telemann · Turina · Granados · Pärt"
+ },
+ {
+  "anio": 2023,
+  "mes": 8,
+  "dia": 10,
+  "fecha": "10.08",
+  "titulo": "Festival ADAR",
+  "sitio": "Grado, Asturias, Spain",
+  "rep": "Boulanger · Telemann · Turina · Granados · Pärt"
+ },
+ {
+  "anio": 2023,
+  "mes": 8,
+  "dia": 9,
+  "fecha": "09.08",
+  "titulo": "Festival ADAR",
+  "sitio": "El Franco, Asturias, Spain",
+  "rep": "Boulanger · Telemann · Turina · Granados · Pärt"
+ },
+ {
+  "anio": 2023,
+  "mes": 6,
+  "dia": 8,
+  "fecha": "08.06",
+  "titulo": "Cervantes Institute, Tokyo",
+  "sitio": "Cervantes Institute, Tokyo",
+  "rep": "Schumann · de Falla · van der Aa · Schubert · Laporta"
+ },
+ {
+  "anio": 2023,
+  "mes": 3,
+  "dia": 24,
+  "fecha": "24–26.03",
+  "titulo": "Architecture of a Common Man",
+  "sitio": "Culture Lab Theater, NYC",
+  "rep": ""
+ },
+ {
+  "anio": 2023,
+  "mes": 2,
+  "dia": 12,
+  "fecha": "12.02",
+  "titulo": "Opus 71 Series",
+  "sitio": "Theater 71, NYC",
+  "rep": "Schumann · Falla · Telemann · Schubert · Laporta"
+ },
+ {
+  "anio": 2022,
+  "mes": 12,
+  "dia": 18,
+  "fecha": "18.12",
+  "titulo": "Falla!",
+  "sitio": "As Quintas Auditorium, Asturias",
+  "rep": "Bartók · Falla · Telemann · Fauré · Schumann"
+ },
+ {
+  "anio": 2022,
+  "mes": 11,
+  "dia": 5,
+  "fecha": "05.11",
+  "titulo": "We Can Learn (Canada)",
+  "sitio": "Kitchener Music Society, Ontario",
+  "rep": "Mozart · Schumann · Nikolayeva · Wysocki"
+ },
+ {
+  "anio": 2022,
+  "mes": 10,
+  "dia": 9,
+  "fecha": "09.10",
+  "titulo": "Masterclasses",
+  "sitio": "Milford, CT",
+  "rep": ""
+ },
+ {
+  "anio": 2022,
+  "mes": 10,
+  "dia": 8,
+  "fecha": "08.10",
+  "titulo": "We Can Learn (US)",
+  "sitio": "The Milford Theater, CT",
+  "rep": "Mozart · Schumann · Nikolayeva · Wysocki"
+ },
+ {
+  "anio": 2022,
+  "mes": 9,
+  "dia": 29,
+  "fecha": "29.09",
+  "titulo": "Fragile Form",
+  "sitio": "The Blue Gallery, NY",
+  "rep": "Shostakovich · Oram · Ravel · Boulanger"
+ },
+ {
+  "anio": 2022,
+  "mes": 9,
+  "dia": 28,
+  "fecha": "28.09",
+  "titulo": "Fragile Form",
+  "sitio": "The Milford Theater, NY",
+  "rep": "Wysocki · Muhly · Mozart · van der Aa · Selin · Nikolayeva"
+ },
+ {
+  "anio": 2022,
+  "mes": 9,
+  "dia": 27,
+  "fecha": "27.09",
+  "titulo": "Fragile Form",
+  "sitio": "The Milford Theater, NY",
+  "rep": "Kowalsky · Saint Saens · Shaw · Granados"
+ },
+ {
+  "anio": 2022,
+  "mes": 8,
+  "dia": 8,
+  "fecha": "08–13.08",
+  "titulo": "Festival ADAR",
+  "sitio": "Asturias, Spain",
+  "rep": "Artistic Director"
+ },
+ {
+  "anio": 2022,
+  "mes": 6,
+  "dia": 4,
+  "fecha": "04.06",
+  "titulo": "Queens Rising",
+  "sitio": "Queens Public Library at Hunters Point",
+  "rep": "Debussy · Janáček · Laporta"
+ },
+ {
+  "anio": 2022,
+  "mes": 6,
+  "dia": 2,
+  "fecha": "02.06",
+  "titulo": "Live Podcast Music Series",
+  "sitio": "Queens Public Library at Kew Gardens Hills",
+  "rep": "Bartók · Janáček · Debussy"
+ },
+ {
+  "anio": 2022,
+  "mes": 5,
+  "dia": 27,
+  "fecha": "27.05",
+  "titulo": "Chutzpah! Festival, Vancouver",
+  "sitio": "Vancouver, Canada",
+  "rep": "Bloch · Schoenfeld"
+ },
+ {
+  "anio": 2022,
+  "mes": 5,
+  "dia": 22,
+  "fecha": "22.05",
+  "titulo": "Chaminade Club Music Series",
+  "sitio": "Grinton I. Will Library, Yonkers",
+  "rep": "Debussy · Janáček · Franck"
+ },
+ {
+  "anio": 2022,
+  "mes": 5,
+  "dia": 5,
+  "fecha": "05.05",
+  "titulo": "Live Podcast Music Series",
+  "sitio": "Queens Public Library at Hunters Point",
+  "rep": "Debussy · Janáček"
+ },
+ {
+  "anio": 2022,
+  "mes": 4,
+  "dia": 10,
+  "fecha": "10.04",
+  "titulo": "Wherever one turns",
+  "sitio": "Culture Lab Theater",
+  "rep": "Haydn · Turina · Murphy · Mahler"
+ },
+ {
+  "anio": 2022,
+  "mes": 4,
+  "dia": 9,
+  "fecha": "09.04",
+  "titulo": "We can learn",
+  "sitio": "Culture Lab Theater",
+  "rep": "Debussy · Nikolayeva · Wysocki · Mozart"
+ },
+ {
+  "anio": 2022,
+  "mes": 4,
+  "dia": 8,
+  "fecha": "08.04",
+  "titulo": "Childhood memories",
+  "sitio": "Culture Lab Theater",
+  "rep": "Haydn · Kowalsky · Shostakovich · Schubert · Andres"
+ },
+ {
+  "anio": 2022,
+  "mes": 4,
+  "dia": 5,
+  "fecha": "05.04",
+  "titulo": "Culture Lab Live Streaming Series",
+  "sitio": "Culture Lab Theater",
+  "rep": "Debussy · Nikolayeva · Schumann"
+ },
+ {
+  "anio": 2022,
+  "mes": 3,
+  "dia": 11,
+  "fecha": "11.03",
+  "titulo": "LiveSOUNDS Music Series",
+  "sitio": "Anna-Maria Kellen Hall, NYC",
+  "rep": "Debussy · Janáček · Franck"
+ },
+ {
+  "anio": 2021,
+  "mes": 12,
+  "dia": 5,
+  "fecha": "05.12",
+  "titulo": "Pari Intervalo",
+  "sitio": "Culture Lab Theater, Queens",
+  "rep": "Mahler · Renie · Telemann · Pärt · Janáček · Brahms"
+ },
+ {
+  "anio": 2021,
+  "mes": 12,
+  "dia": 4,
+  "fecha": "04.12",
+  "titulo": "A Wonderful Day",
+  "sitio": "Culture Lab Theater, Queens",
+  "rep": "Beethoven · Bloch · Pärt · Laporta · Grieg · Andres"
+ },
+ {
+  "anio": 2021,
+  "mes": 12,
+  "dia": 3,
+  "fecha": "03.12",
+  "titulo": "The Bringer of Pace",
+  "sitio": "Culture Lab Theater, Queens",
+  "rep": "Roussel · Holst · Harbison · Reich · Gaubert · Caplet"
+ },
+ {
+  "anio": 2021,
+  "mes": 10,
+  "dia": 15,
+  "fecha": "15.10",
+  "titulo": "Lighting the Dark",
+  "sitio": "Culture Lab Theater, Queens",
+  "rep": "Karnillaw · Clement · Mozart · Rachmaninoff · Moon"
+ },
+ {
+  "anio": 2021,
+  "mes": 10,
+  "dia": 6,
+  "fecha": "06.10",
+  "titulo": "Queens Preludes",
+  "sitio": "Culture Lab Theater, Queens",
+  "rep": "Laporta"
+ },
+ {
+  "anio": 2021,
+  "mes": 8,
+  "dia": 14,
+  "fecha": "14.08",
+  "titulo": "Festival ADAR",
+  "sitio": "Leiguarda, Asturias, Spain",
+  "rep": "Falla · Fernández · Harbison"
+ },
+ {
+  "anio": 2021,
+  "mes": 5,
+  "dia": 1,
+  "fecha": "01.05",
+  "titulo": "CreArt Music Festival",
+  "sitio": "Web Experience",
+  "rep": ""
+ },
+ {
+  "anio": 2020,
+  "mes": 2,
+  "dia": 14,
+  "fecha": "14–15.02",
+  "titulo": "Two Roads",
+  "sitio": "The Tank Theater, Manhattan, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2019,
+  "mes": 12,
+  "dia": 20,
+  "fecha": "20.12",
+  "titulo": "Brandenburg",
+  "sitio": "Renee Weiler Concert Hall, Manhattan, New York",
+  "rep": "CreArt Music Series"
+ },
+ {
+  "anio": 2019,
+  "mes": 12,
+  "dia": 1,
+  "fecha": "01.12",
+  "titulo": "Awave (Japan Debut)",
+  "sitio": "Monten Hall, Tokyo, Japan",
+  "rep": "Touring Productions"
+ },
+ {
+  "anio": 2019,
+  "mes": 11,
+  "dia": 10,
+  "fecha": "10.11",
+  "titulo": "Awave",
+  "sitio": "Bay Ridge Music Series, Brooklyn, New York",
+  "rep": "Bay Ridge Music Series"
+ },
+ {
+  "anio": 2019,
+  "mes": 10,
+  "dia": 5,
+  "fecha": "05.10",
+  "titulo": "Bilitis",
+  "sitio": "Renee Weiler Concert Hall, Manhattan, New York",
+  "rep": "CreArt Music Series"
+ },
+ {
+  "anio": 2019,
+  "mes": 9,
+  "dia": 1,
+  "fecha": "01.09",
+  "titulo": "Two Roads",
+  "sitio": "Plaxall Gallery, Queens, New York",
+  "rep": "CreArt Music Festival"
+ },
+ {
+  "anio": 2019,
+  "mes": 8,
+  "dia": 31,
+  "fecha": "31.08",
+  "titulo": "End of Time",
+  "sitio": "Plaxall Gallery, Queens, New York",
+  "rep": "CreArt Music Festival"
+ },
+ {
+  "anio": 2019,
+  "mes": 8,
+  "dia": 30,
+  "fecha": "30.08",
+  "titulo": "Memories",
+  "sitio": "Plaxall Gallery, Queens, New York",
+  "rep": "CreArt Music Festival"
+ },
+ {
+  "anio": 2019,
+  "mes": 7,
+  "dia": 1,
+  "fecha": "01–07.07",
+  "titulo": "Residency at Avaloch Farm Music Institute",
+  "sitio": "Avaloch Farm, Boscawen, New Hampshire",
+  "rep": ""
+ },
+ {
+  "anio": 2019,
+  "mes": 3,
+  "dia": 31,
+  "fecha": "31.03",
+  "titulo": "Studio Recording AWAVE",
+  "sitio": "Oktaven Studio, Yonkers, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2019,
+  "mes": 3,
+  "dia": 1,
+  "fecha": "01.03",
+  "titulo": "Memories",
+  "sitio": "Renee Weiler Hall, Manhattan, New York",
+  "rep": "CreArt Music Series"
+ },
+ {
+  "anio": 2019,
+  "mes": 1,
+  "dia": 18,
+  "fecha": "18.01",
+  "titulo": "AWAVE WITHIN",
+  "sitio": "Renee Weiler Concert Hall, Manhattan, New York",
+  "rep": "CreArt Music Series"
+ },
+ {
+  "anio": 2019,
+  "mes": 1,
+  "dia": 17,
+  "fecha": "17–20.01",
+  "titulo": "Chamber Music America: 2019 National Conference",
+  "sitio": "",
+  "rep": ""
+ },
+ {
+  "anio": 2018,
+  "mes": 12,
+  "dia": 11,
+  "fecha": "11.12",
+  "titulo": "Chaminade Club",
+  "sitio": "Grinton I. Will Public Library",
+  "rep": ""
+ },
+ {
+  "anio": 2018,
+  "mes": 12,
+  "dia": 8,
+  "fecha": "08–09.12",
+  "titulo": "Playful (A is for Aye Aye)",
+  "sitio": "Anthology Film Archives, Manhattan, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2018,
+  "mes": 9,
+  "dia": 2,
+  "fecha": "02.09",
+  "titulo": "Just as They Are",
+  "sitio": "Plaxall Gallery, Queens, New York",
+  "rep": "CreArt Music Festival"
+ },
+ {
+  "anio": 2018,
+  "mes": 9,
+  "dia": 1,
+  "fecha": "01.09",
+  "titulo": "Awave",
+  "sitio": "Plaxall Gallery, Queens, New York",
+  "rep": "CreArt Music Festival"
+ },
+ {
+  "anio": 2018,
+  "mes": 8,
+  "dia": 31,
+  "fecha": "31.08",
+  "titulo": "Folk Culture",
+  "sitio": "Plaxall Gallery, Queens, New York",
+  "rep": "CreArt Music Festival"
+ },
+ {
+  "anio": 2018,
+  "mes": 6,
+  "dia": 25,
+  "fecha": "25.06",
+  "titulo": "CreArtED Inauguration",
+  "sitio": "Plaxall Gallery, Queens, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2018,
+  "mes": 5,
+  "dia": 8,
+  "fecha": "08.05",
+  "titulo": "Chaminade Club",
+  "sitio": "Grinton I. Will Library, Yonkers, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2018,
+  "mes": 4,
+  "dia": 29,
+  "fecha": "29.04",
+  "titulo": "Arts Month at Ethical Culture",
+  "sitio": "Society for Ethical Culture, Manhattan, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2018,
+  "mes": 3,
+  "dia": 30,
+  "fecha": "30.03",
+  "titulo": "Mahler 4th Symphony",
+  "sitio": "Society for Ethical Culture, Manhattan, New York",
+  "rep": "CreArt Music Series"
+ },
+ {
+  "anio": 2018,
+  "mes": 1,
+  "dia": 26,
+  "fecha": "26.01",
+  "titulo": "Ethical Culture Music Series (feat. Lewis Lockwood)",
+  "sitio": "CreArt Music Series",
+  "rep": "Society for Ethical Culture, Manhattan, New York"
+ },
+ {
+  "anio": 2017,
+  "mes": 11,
+  "dia": 18,
+  "fecha": "18.11",
+  "titulo": "Bay Ridge Concert Series",
+  "sitio": "Bay Ridge, Brooklyn",
+  "rep": ""
+ },
+ {
+  "anio": 2017,
+  "mes": 10,
+  "dia": 26,
+  "fecha": "26.10",
+  "titulo": "Ethical Culture Music Series IV (feat. JP Jofre)",
+  "sitio": "Society for Ethical Culture, Manhattan, New York",
+  "rep": "CreArt Music Series"
+ },
+ {
+  "anio": 2017,
+  "mes": 10,
+  "dia": 6,
+  "fecha": "06.10",
+  "titulo": "Opera America Series",
+  "sitio": "Opera America Center, Manhattan, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2017,
+  "mes": 5,
+  "dia": 18,
+  "fecha": "18.05",
+  "titulo": "Ethical Culture Music Series III",
+  "sitio": "Society for Ethical Culture, Manhattan, New York",
+  "rep": "CreArt Music Series"
+ },
+ {
+  "anio": 2016,
+  "mes": 12,
+  "dia": 2,
+  "fecha": "02–03.12",
+  "titulo": "Visuality VII",
+  "sitio": "Queens Theatre, Queens, New York",
+  "rep": "Touring Productions"
+ },
+ {
+  "anio": 2016,
+  "mes": 11,
+  "dia": 4,
+  "fecha": "04.11",
+  "titulo": "The DiMenna Series (feat. Todd Reynolds)",
+  "sitio": "Mary Flagler Cary Hall, Manhattan, New York",
+  "rep": "CreArt Music Series"
+ },
+ {
+  "anio": 2016,
+  "mes": 9,
+  "dia": 30,
+  "fecha": "30.09",
+  "titulo": "The DiMenna Series (feat. Joshua Penman)",
+  "sitio": "Mary Flagler Hall, Manhattan, New York",
+  "rep": "CreArt Music Series"
+ },
+ {
+  "anio": 2016,
+  "mes": 1,
+  "dia": 7,
+  "fecha": "07.01",
+  "titulo": "Chamber Music America Showcase",
+  "sitio": "Le Poisson Rouge, Manhattan, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2015,
+  "mes": 10,
+  "dia": 16,
+  "fecha": "16.10",
+  "titulo": "Steinway Hall Series",
+  "sitio": "Steinway Concert Hall, Manhattan, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2015,
+  "mes": 5,
+  "dia": 9,
+  "fecha": "09–11.05",
+  "titulo": "Visuality VI",
+  "sitio": "Clemente Soto Velez, Manhattan, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2015,
+  "mes": 5,
+  "dia": 3,
+  "fecha": "03.05",
+  "titulo": "A is for Aye Aye",
+  "sitio": "Michiko Studios, Manhattan, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2015,
+  "mes": 3,
+  "dia": 13,
+  "fecha": "13–14.03",
+  "titulo": "Visuality V",
+  "sitio": "The Tank Theater, Manhattan, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2014,
+  "mes": 11,
+  "dia": 6,
+  "fecha": "06–07.11",
+  "titulo": "Visuality IV",
+  "sitio": "Artisphere Theater, Arlington, Virginia",
+  "rep": ""
+ },
+ {
+  "anio": 2014,
+  "mes": 11,
+  "dia": 4,
+  "fecha": "04.11",
+  "titulo": "Visuality III",
+  "sitio": "Cervantes Institute, Manhattan, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2014,
+  "mes": 5,
+  "dia": 23,
+  "fecha": "23.05",
+  "titulo": "Visuality II",
+  "sitio": "Mary Flagler Cary Hall, Manhattan, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2014,
+  "mes": 5,
+  "dia": 21,
+  "fecha": "21.05",
+  "titulo": "Visuality I",
+  "sitio": "Spectrum, Manhattan, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2013,
+  "mes": 12,
+  "dia": 10,
+  "fecha": "10.12",
+  "titulo": "Paris a.m.",
+  "sitio": "Cervantes Institute, Manhattan, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2013,
+  "mes": 12,
+  "dia": 7,
+  "fecha": "07.12",
+  "titulo": "Paris a.m.",
+  "sitio": "Gershwin Hotel, Manhattan, New York",
+  "rep": ""
+ },
+ {
+  "anio": 2013,
+  "mes": 8,
+  "dia": 11,
+  "fecha": "11.08",
+  "titulo": "Opera America Center",
+  "sitio": "National Opera America Center, Manhattan, New York",
+  "rep": ""
+ }
+]

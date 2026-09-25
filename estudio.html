@@ -7,7 +7,7 @@
 <meta name="description" content="Clases de piano con Josefina Urraca en su estudio de Queens, Nueva York. Todos los niveles, en español o en inglés.">
 <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://josefinaurraca.com/estudio.html">
-<meta name="theme-color" content="#fafaf7">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Estudio de piano — Josefina Urraca">
 <meta property="og:description" content="Clases de piano con Josefina Urraca en su estudio de Queens, Nueva York. Todos los niveles, en español o en inglés.">
@@ -16,58 +16,42 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,300..600;1,7..72,300..500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
 <header class="cabecera">
   <div class="caja">
-    <a class="marca" href="index.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="1.5"/><path d="M7 6v7M11 6v7M15 6v7M19 6v7"/></svg> Josefina Urraca</a>
-    <nav class="navegacion" aria-label="Secciones">
-        <a href="proyectos.html" aria-current="page" data-es="Proyectos" data-en="Projects">Proyectos</a>
-        <a href="agenda.html" data-es="Agenda" data-en="Calendar">Agenda</a>
-        <a href="trayectoria.html" data-es="Trayectoria" data-en="About">Trayectoria</a>
-        <a href="prensa.html" data-es="Prensa" data-en="Press">Prensa</a>
+    <a class="marca" href="index.html">Josefina Urraca</a>
+    <nav aria-label="Secciones">
+      <ul class="navegacion">
+      <li><a href="index.html" data-es="Inicio" data-en="Home">Inicio</a></li>
+      <li><a href="trayectoria.html" data-es="Trayectoria" data-en="Background">Trayectoria</a></li>
+      <li class="con-hijos"><a href="proyectos.html" aria-current="page" data-es="Proyectos" data-en="Work">Proyectos</a>
+        <ul class="submenu">
+          <li><a href="creartbox.html" data-es="CreArtBox" data-en="CreArtBox">CreArtBox</a></li>
+          <li><a href="adar.html" data-es="Festival ADAR" data-en="Festival ADAR">Festival ADAR</a></li>
+          <li><a href="estudio.html" aria-current="page" data-es="Estudio de piano" data-en="Piano studio">Estudio de piano</a></li>
+        </ul>
+      </li>
+      <li><a href="agenda.html" data-es="Agenda" data-en="Calendar">Agenda</a></li>
+      <li><a href="prensa.html" data-es="Prensa" data-en="Press">Prensa</a></li>
+      <li><a href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
+      </ul>
     </nav>
     <p class="idioma">
       <button type="button" data-setlang="es" aria-pressed="true">Es</button>
       <button type="button" data-setlang="en" aria-pressed="false">En</button>
     </p>
-    <a class="pildora pildora--amarilla solo-ancho" href="contacto.html" data-es="Contratar" data-en="Book">Contratar</a>
-    <button class="hamburguesa" type="button" aria-expanded="false" aria-controls="cajon" aria-label="Abrir el menú"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
 
-<div class="cajon" id="cajon">
-  <button class="cajon__cerrar" type="button" aria-label="Cerrar el menú"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-  <nav aria-label="Secciones">
-    <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
-        <a href="proyectos.html" aria-current="page" data-es="Proyectos" data-en="Projects">Proyectos</a>
-        <a href="agenda.html" data-es="Agenda" data-en="Calendar">Agenda</a>
-        <a href="trayectoria.html" data-es="Trayectoria" data-en="About">Trayectoria</a>
-        <a href="prensa.html" data-es="Prensa" data-en="Press">Prensa</a>
-    <a href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a>
-  </nav>
-  <div class="cajon__pie">
-    <p class="idioma">
-      <button type="button" data-setlang="es" aria-pressed="true">Es</button>
-      <button type="button" data-setlang="en" aria-pressed="false">En</button>
-    </p>
-    <a class="pildora pildora--papel" href="contacto.html" data-es="Contratar" data-en="Book">Contratar</a>
-  </div>
-</div>
-
 <main>
-<div class="banda">
-  <img src="assets/img/duo.jpg" width="1500" height="1000" alt="Vista desde arriba de un concierto de piano y flauta en una sala de muros de canto rodado">
-  <div class="banda__texto">
-    <div class="caja">
-      <p class="seccion"><span class="num">§ 02</span><span aria-hidden="true">·</span><span data-es="Proyecto" data-en="Project">Proyecto</span></p>
-      <h1 data-es="Estudio de piano" data-en="Piano studio">Estudio de piano</h1>
-    </div>
+  <div class="banda">
+    <img src="assets/img/duo.jpg" width="1500" height="1000" alt="Vista desde arriba de un concierto de piano y flauta en una sala de muros de canto rodado">
+    <div class="banda__texto"><div class="caja"><h1 data-es="Estudio de piano" data-en="Piano studio">Estudio de piano</h1></div></div>
   </div>
-</div>
 
   <section class="bloque">
     <div class="caja detalle">
@@ -76,21 +60,20 @@
         <p data-es="Se trabaja la técnica y el oído, pero también algo que se suele dejar para el final y que conviene empezar pronto: la costumbre de tocar delante de gente. Para eso están los conciertos didácticos y los talleres en comunidad del programa CreArtED." data-en="We work on technique and ear training, but also on something usually left for last that is better started early: the habit of playing in front of people. That is what the didactic concerts and community workshops of the CreArtED programme are for.">Se trabaja la técnica y el oído, pero también algo que se suele dejar para el final y que conviene empezar pronto: la costumbre de tocar delante de gente. Para eso están los conciertos didácticos y los talleres en comunidad del programa CreArtED.</p>
         <p data-es="Para preguntar por plazas y horarios, escribir al correo de contacto." data-en="To ask about places and timetables, write to the contact address.">Para preguntar por plazas y horarios, escribir al correo de contacto.</p>
       </div>
-      <aside class="panel">
-        <h2 data-es="En breve" data-en="At a glance">En breve</h2>
+      <aside class="ficha">
         <dl>
-        <dt data-es="Dónde" data-en="Where">Dónde</dt>
-        <dd data-es="Queens, Nueva York" data-en="Queens, New York">Queens, Nueva York</dd>
-        <dt data-es="Niveles" data-en="Levels">Niveles</dt>
-        <dd data-es="Todos" data-en="All">Todos</dd>
-        <dt data-es="Idiomas" data-en="Languages">Idiomas</dt>
-        <dd data-es="Español o inglés" data-en="Spanish or English">Español o inglés</dd>
-        <dt data-es="También" data-en="Also">También</dt>
-        <dd data-es="Talleres y conciertos didácticos (CreArtED)" data-en="Workshops and didactic concerts (CreArtED)">Talleres y conciertos didácticos (CreArtED)</dd>
+          <dt data-es="Dónde" data-en="Where">Dónde</dt>
+          <dd data-es="Queens, Nueva York" data-en="Queens, New York">Queens, Nueva York</dd>
+          <dt data-es="Niveles" data-en="Levels">Niveles</dt>
+          <dd data-es="Todos" data-en="All">Todos</dd>
+          <dt data-es="Idiomas" data-en="Languages">Idiomas</dt>
+          <dd data-es="Español o inglés" data-en="Spanish or English">Español o inglés</dd>
+          <dt data-es="También" data-en="Also">También</dt>
+          <dd data-es="Talleres y conciertos didácticos (CreArtED)" data-en="Workshops and didactic concerts (CreArtED)">Talleres y conciertos didácticos (CreArtED)</dd>
         </dl>
-        <a class="pildora pildora--amarilla" href="contacto.html" data-es="Escribir" data-en="Get in touch">Escribir</a>
       </aside>
     </div>
+    <div class="caja"></div>
   </section>
 
 </main>
@@ -98,11 +81,11 @@
 <footer class="pie">
   <div class="caja">
     <div>
-      <h2 data-es="Josefina Urraca" data-en="Josefina Urraca">Josefina Urraca</h2>
+      <h2>Josefina Urraca</h2>
       <p data-es="Pianista. Intérprete y directora artística, entre Nueva York y Asturias." data-en="Pianist. Performer and artistic director, between New York and Asturias.">Pianista. Intérprete y directora artística, entre Nueva York y Asturias.</p>
     </div>
     <div>
-      <h2 data-es="Proyectos" data-en="Projects">Proyectos</h2>
+      <h2 data-es="Proyectos" data-en="Work">Proyectos</h2>
       <ul>
         <li><a href="creartbox.html">CreArtBox</a></li>
         <li><a href="adar.html">Festival ADAR</a></li>
@@ -112,19 +95,19 @@
     <div>
       <h2 data-es="El sitio" data-en="This site">El sitio</h2>
       <ul>
+        <li><a href="trayectoria.html" data-es="Trayectoria" data-en="Background">Trayectoria</a></li>
         <li><a href="agenda.html" data-es="Agenda" data-en="Calendar">Agenda</a></li>
-        <li><a href="trayectoria.html" data-es="Trayectoria" data-en="About">Trayectoria</a></li>
         <li><a href="prensa.html" data-es="Prensa" data-en="Press">Prensa</a></li>
         <li><a href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
       </ul>
     </div>
     <div>
-      <h2 data-es="En otros sitios" data-en="Elsewhere">En otros sitios</h2>
+      <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
       <ul>
+        <li><a href="mailto:hola@josefinaurraca.com">hola@josefinaurraca.com</a></li>
         <li><a href="https://creartbox.nyc" rel="noopener">creartbox.nyc</a></li>
         <li><a href="https://festivaladar.com" rel="noopener">festivaladar.com</a></li>
         <li><a href="https://www.instagram.com/creartboxnyc/" rel="noopener">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/josefina-urraca-9a829a60" rel="noopener">LinkedIn</a></li>
       </ul>
     </div>
   </div>

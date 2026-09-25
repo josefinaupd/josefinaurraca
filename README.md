@@ -20,68 +20,58 @@ assets/logo/favicon.svg    el icono de la pestaña
 
 ## El diseño
 
-**La estructura** viene de la plantilla
-[Wildhaven](https://lovable.dev/templates/websites/services/wildhaven-template)
-de Lovable: carrusel de apertura a sangre con barritas de progreso, tarjetas,
-páginas de detalle con panel pegado, cierre con llamada y cajón de móvil. No se
-ha copiado su código —es React con Framer Motion y sólo se remezcla dentro de
-Lovable—, sino rehecho en HTML, CSS y JS normales.
+Modelo: **[diegoarribas.com](https://diegoarribas.com/)**, esta vez leído de su
+hoja de estilo (`wp-content/themes/yootheme/css/theme.1.css`) y no de una
+descripción de segunda mano, que en los intentos anteriores estaba equivocada:
 
-**La piel** viene de sus dos webs, para que las tres se reconozcan como de la
-misma casa. No es una impresión: son los valores leídos de sus hojas de estilo.
+```
+html    { font-family:'Playfair Display'; font-size:15px; line-height:1.5;
+          background:#fff; color:#000 }
+h1..h6  { font-family:Antonio; font-weight:lighter;
+          text-transform:uppercase; letter-spacing:8px }
+grises  #838383, #f2f2f2, #eaeaea, #bfbfbf.  Ningún color de acento.
+```
+
+Es decir, al revés de lo previsible: los **titulares** van en una condensada
+ligera (**Antonio**), en mayúsculas y muy espaciados; el **texto** va en una
+serif (**Playfair Display**); y el color es negro sobre blanco, con grises.
+Nada más.
+
+Su portada tampoco es un carrusel: una fotografía fija con su firma encima, un
+dato suelto debajo (`Madrid (1957)`) y después una entrada por sección que
+lleva a su página. Aquí igual: la foto con el nombre encima,
+`Pianista · Nueva York y Asturias`, y cuatro entradas —Proyectos, Agenda,
+Trayectoria, Prensa— cada una con una frase y su enlace.
+
+**Deliberadamente distinto de sus dos proyectos.** Es su web personal, no la
+del colectivo ni la del festival, así que no comparte nada con ellas:
 
 | | creartbox.nyc | festivaladar.com | Aquí |
 |---|---|---|---|
-| Tipografía | Archivo + Literata | Chivo + Alegreya | **Archivo + Literata** |
-| Tinta | `#131820` | `#0a0907` | `#131820` |
-| Papel | `#fafaf7` | crema | `#fafaf7` |
-| Acento | `#fbda41` / `#9c8516` | `#c8a84b` | `#fbda41` / `#9c8516` |
-| Esquinas | `999px` y `50%`; el resto rectas | rectas | igual |
-| Sombra | `6px 0 0 #131820`, bloque duro | — | igual |
+| Tipografía | Archivo + Literata | Chivo + Alegreya | Antonio + Playfair Display |
+| Acento | amarillo `#fbda41` | oro `#c8a84b` | **ninguno** |
+| Secciones | — | numeradas `§ 01 ·` | sin numerar |
 
-Tres gestos son literalmente suyos:
+Fuera, por lo mismo: el amarillo, el oro, las secciones numeradas, el subrayado
+de rotulador de CreArtBox y la sombra de bloque. Y fuera también la retórica de
+los «tres frentes»: los proyectos se listan y ya está.
 
-- **El subrayado de rotulador** de CreArtBox,
-  `linear-gradient(transparent 58%, var(--amarillo) 58%)`, sobre el correo, la
-  página actual del cajón y el «ver más» de las tarjetas al pasar por encima.
-- **La sombra de bloque** `6px 0 0` en vez de sombras desenfocadas: las tarjetas
-  no flotan, se desplazan.
-- **Las secciones numeradas `§ 01 ·`** del Festival ADAR. En su web es el
-  sistema de la casa, no un adorno, así que aquí numera las secciones de verdad.
+| Token | Valor | De su tema |
+|---|---|---|
+| `--blanco` | `#fff` | `background:#fff` |
+| `--negro` | `#000` | `color:#000` |
+| `--gris` | `#838383` | texto secundario |
+| `--gris-claro` | `#f2f2f2` | fondo del pie |
+| `--linea` | `#eaeaea` | filetes |
+| `--track` | `.2em` | sus `letter-spacing: 8px` |
 
-Lo que se ha quitado de Wildhaven por no ser de esta casa: el verde salvia, las
-esquinas de 8 px y las sombras desenfocadas.
+### Lo que queda de la plantilla Wildhaven
 
-**Única desviación deliberada**: el amarillo `#fbda41` con texto blanco encima
-daría 1,9:1. Los botones amarillos llevan la tinta oscura, 11:1.
-
-### Lo que no se ha traído de la plantilla, y por qué
-
-Wildhaven es una web **de reservas**. Se ha quitado en vez de fingirlo: el
-catálogo ordenable por precio y valoración, la lista de *amenities* y el
-formulario de reserva en tres pasos. La página de contacto es un correo directo
-y una lista de qué conviene contar según el encargo.
-
-| Wildhaven | Aquí |
-|---|---|
-| `/` carrusel + destacados + «why» + llamada | `index.html`, misma secuencia |
-| `/locations` catálogo | `proyectos.html` |
-| `/location/:id` con panel de reserva pegado | `creartbox.html`, `adar.html`, `estudio.html`, con el panel «En breve» |
-| `/about` | `trayectoria.html` |
-| `/contact` con formulario de tres pasos | `contacto.html`, correo directo |
-| — | `agenda.html` y `prensa.html`, que ella ya tenía |
-
-## Movimiento
-
-Poco y medido, todo en `assets/js/main.js`:
-
-- El carrusel pasa de diapositiva cada **6 segundos**, con una barrita de
-  progreso por diapositiva.
-- **Se para** cuando la pestaña no se está viendo, y **no arranca** si el
-  sistema pide `prefers-reduced-motion`. La hoja de estilo apaga además todas
-  las transiciones en ese caso.
-- El cajón de móvil se cierra con `Esc` y al pulsar cualquier enlace, y devuelve
-  el foco al botón que lo abrió.
+La estructura de nueve páginas y el panel de datos de las páginas de proyecto.
+Se han retirado el carrusel, las tarjetas con sombra, las píldoras y el cajón
+de móvil: nada de eso está en el modelo. El menú es normal y el JavaScript ha
+vuelto a ser el de veinte líneas —idioma y año— porque ya no hay nada que
+animar.
 
 ## Bilingüe
 

@@ -4,20 +4,33 @@ Las imágenes de esta carpeta son recortes ya preparados para web. Los originale
 (en resolución completa) están en josefinaurraca.com y en el archivo de
 CreArtBox / Festival ADAR; conviene guardarlos aparte antes de recortar.
 
-| Archivo | Dónde sale | Medidas |
-|---|---|---|
-| `portada.jpg` | Carrusel de apertura (1.ª) y banda de Agenda | 2000 × 1125 (16:9) |
-| `creartbox.jpg` | Carrusel (2.ª), tarjeta y banda de CreArtBox | 1500 × 1000 (3:2) |
-| `adar.jpg` | Carrusel (3.ª), tarjeta y banda de ADAR | 1500 × 1000 (3:2) |
-| `duo.jpg` | Carrusel (4.ª), tarjeta del estudio y banda de Prensa | 1500 × 1000 (3:2) |
-| `retrato.jpg` | Banda de Trayectoria | 1100 × 1375 (4:5) |
-| `og.jpg` | Vista previa al compartir el enlace | 1200 × 628 |
+| Archivo | Dónde sale | Medidas | Origen |
+|---|---|---|---|
+| `adar-josefina.jpg` | Carrusel 1.ª | 1600 × 900 | festivaladar.com |
+| `portada.jpg` | Carrusel 2.ª | 2000 × 1125 | josefinaurraca.com |
+| `piano-azul.jpg` | Carrusel 3.ª | 1361 × 766 | creartbox.nyc |
+| `ensemble.jpg` | Carrusel 4.ª y banda de Prensa | 1600 × 1066 | creartbox.nyc |
+| `grupo.jpg` | Tarjeta y banda de CreArtBox | 1600 × 1067 | creartbox.nyc |
+| `adar-claustro.jpg` | Tarjeta de ADAR y banda de Agenda | 1500 × 1000 | festivaladar.com |
+| `adar-iglesia.jpg` | Banda de la página de ADAR | 1500 × 1000 | festivaladar.com |
+| `creartbox.jpg` | Banda de la página de CreArtBox | 1500 × 1000 | josefinaurraca.com |
+| `duo.jpg` | Tarjeta y banda del Estudio | 1500 × 1000 | josefinaurraca.com |
+| `retrato.jpg` | Banda de Trayectoria | 1100 × 1375 | josefinaurraca.com |
+| `retrato-cb.jpg` | Sin usar. Su retrato oficial de CreArtBox | 292 × 292 | creartbox.nyc |
+| `og.jpg` | Vista previa al compartir el enlace | 1200 × 628 | josefinaurraca.com |
 
-**Hacen falta más.** Con este diseño las fotografías mandan: el carrusel las
-pone a sangre a casi toda la pantalla y las mismas cuatro se repiten en las
-tarjetas y en las bandas. Lo suyo sería una apaisada buena por proyecto y dos o
-tres más para el carrusel, todas horizontales y de al menos 2000 px de ancho.
-El retrato vertical sólo funciona en la banda de Trayectoria, donde se recorta.
+**Sale ella en**: las cuatro del carrusel, `grupo.jpg` (la segunda por la
+izquierda), `duo.jpg`, `retrato.jpg` y `retrato-cb.jpg`. Las de ADAR sin ella
+—claustro e iglesia— son de sus conciertos y se usan como bandas de sección.
+
+`retrato-cb.jpg` está en el repositorio pero no se usa en ninguna página: sólo
+mide 292 px de lado, que no da ni para una tarjeta. Si aparece el original en
+resolución completa, es el mejor retrato que tiene.
+
+**Todas vienen de sus propias webs** (josefinaurraca.com, creartbox.nyc y el
+archivo de festivaladar.com), recortadas y comprimidas para esta. Falta
+acreditar a los fotógrafos: el pie de página dice «crédito por acreditar» y ahí
+van los nombres en cuanto se sepan.
 
 ## Cambiar una foto
 

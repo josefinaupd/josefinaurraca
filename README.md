@@ -20,75 +20,56 @@ assets/logo/favicon.svg    el icono de la pestaña
 
 ## El diseño
 
-Modelo: la plantilla **[Wildhaven](https://lovable.dev/templates/websites/services/wildhaven-template)**
-de Lovable (reservas para glamping y retiros off-grid), con demo en
-[tranquil-treks-reserve.lovable.app](https://tranquil-treks-reserve.lovable.app).
+**La estructura** viene de la plantilla
+[Wildhaven](https://lovable.dev/templates/websites/services/wildhaven-template)
+de Lovable: carrusel de apertura a sangre con barritas de progreso, tarjetas,
+páginas de detalle con panel pegado, cierre con llamada y cajón de móvil. No se
+ha copiado su código —es React con Framer Motion y sólo se remezcla dentro de
+Lovable—, sino rehecho en HTML, CSS y JS normales.
 
-**No se ha copiado su código.** La plantilla es React con Framer Motion y sólo
-se puede remezclar dentro de Lovable. Lo que sí está publicado es su hoja de
-estilo, y de ahí salen los valores de diseño, tomados literalmente:
+**La piel** viene de sus dos webs, para que las tres se reconozcan como de la
+misma casa. No es una impresión: son los valores leídos de sus hojas de estilo.
 
-```
---background 0 0% 99%   --foreground 0 0% 20%   --primary 150 15% 70%
---accent 150 20% 95%    --muted-foreground 0 0% 50%   --border 0 0% 92%
---radius .5rem          --soft-shadow  0 2px 8px hsl(0 0% 0% / .04)
-                        --hover-shadow 0 4px 16px hsl(0 0% 0% / .08)
---overlay-gradient linear-gradient(180deg, transparent, hsl(0 0% 0% / .4))
---transition-smooth all .3s cubic-bezier(.4, 0, .2, 1)
-tipografía DM Sans 300 / 400 / 500 con cursivas
-```
+| | creartbox.nyc | festivaladar.com | Aquí |
+|---|---|---|---|
+| Tipografía | Archivo + Literata | Chivo + Alegreya | **Archivo + Literata** |
+| Tinta | `#131820` | `#0a0907` | `#131820` |
+| Papel | `#fafaf7` | crema | `#fafaf7` |
+| Acento | `#fbda41` / `#9c8516` | `#c8a84b` | `#fbda41` / `#9c8516` |
+| Esquinas | `999px` y `50%`; el resto rectas | rectas | igual |
+| Sombra | `6px 0 0 #131820`, bloque duro | — | igual |
 
-Sobre eso se ha rehecho su lenguaje visual en HTML, CSS y JS normales: carrusel
-de apertura a sangre con las barritas de progreso, cabecera transparente en
-blanco sobre la fotografía, píldoras, tarjetas redondeadas con sombra suave que
-se levantan al pasar por encima, sección de motivos sobre verde salvia pálido,
-bloque de cierre con llamada, y cajón de móvil que se abre con un `clip-path`
-circular.
+Tres gestos son literalmente suyos:
 
-| Token | Valor | De la plantilla |
-|---|---|---|
-| `--fondo` | `#fcfcfc` | `0 0% 99%` |
-| `--tinta` | `#333333` | `0 0% 20%` |
-| `--tinta-2` | `#808080` | `0 0% 50%` |
-| `--borde` | `#ebebeb` | `0 0% 92%` |
-| `--salvia` | `#a7beb3` | `150 15% 70%` |
-| `--salvia-clara` | `#f0f5f2` | `150 20% 95%` |
-| `--salvia-texto` | `#4b6c5c` | la misma familia, oscurecida |
+- **El subrayado de rotulador** de CreArtBox,
+  `linear-gradient(transparent 58%, var(--amarillo) 58%)`, sobre el correo, la
+  página actual del cajón y el «ver más» de las tarjetas al pasar por encima.
+- **La sombra de bloque** `6px 0 0` en vez de sombras desenfocadas: las tarjetas
+  no flotan, se desplazan.
+- **Las secciones numeradas `§ 01 ·`** del Festival ADAR. En su web es el
+  sistema de la casa, no un adorno, así que aquí numera las secciones de verdad.
 
-**La única desviación deliberada**: la plantilla pone texto blanco sobre el
-verde salvia, y eso da un contraste de 1,9:1, que no se lee. Aquí el botón
-mantiene exactamente el mismo verde pero con la tinta oscura encima, 6,4:1.
+Lo que se ha quitado de Wildhaven por no ser de esta casa: el verde salvia, las
+esquinas de 8 px y las sombras desenfocadas.
 
-### Lo que no se ha traído, y por qué
+**Única desviación deliberada**: el amarillo `#fbda41` con texto blanco encima
+daría 1,9:1. Los botones amarillos llevan la tinta oscura, 11:1.
 
-Wildhaven es una web **de reservas**. Buena parte de su mobiliario no tiene
-equivalente en la web de una pianista, así que se ha quitado en vez de fingirlo:
+### Lo que no se ha traído de la plantilla, y por qué
 
-- El catálogo de alojamientos **ordenable por precio y valoración**: no hay
-  precios ni estrellas que ordenar.
-- La lista de **amenities** de cada alojamiento.
-- El **formulario de reserva en tres pasos**. La página de contacto es un correo
-  directo y una lista de qué conviene contar según el encargo; un formulario
-  falso que no reserva nada sería peor que no tenerlo.
-
-Lo que sí traslada, y cómo:
+Wildhaven es una web **de reservas**. Se ha quitado en vez de fingirlo: el
+catálogo ordenable por precio y valoración, la lista de *amenities* y el
+formulario de reserva en tres pasos. La página de contacto es un correo directo
+y una lista de qué conviene contar según el encargo.
 
 | Wildhaven | Aquí |
 |---|---|
-| `/` carrusel + alojamientos destacados + «why» + llamada | `index.html`, con la misma secuencia |
-| `/locations` catálogo | `proyectos.html`, las tres fichas |
-| `/location/:id` con banda, galería y panel de reserva pegado | `creartbox.html`, `adar.html`, `estudio.html`: banda, texto y panel «En breve» pegado con los datos y el botón de escribir |
+| `/` carrusel + destacados + «why» + llamada | `index.html`, misma secuencia |
+| `/locations` catálogo | `proyectos.html` |
+| `/location/:id` con panel de reserva pegado | `creartbox.html`, `adar.html`, `estudio.html`, con el panel «En breve» |
 | `/about` | `trayectoria.html` |
 | `/contact` con formulario de tres pasos | `contacto.html`, correo directo |
 | — | `agenda.html` y `prensa.html`, que ella ya tenía |
-
-### Nota de encargo
-
-Esta dirección es lo contrario de la anterior, que se pidió **sobria, que no
-pareciera diseñada, y con el texto antes que la fotografía**. Wildhaven es
-fotografía primero y con movimiento. Se ha seguido la plantilla porque es la
-referencia más concreta que se ha dado; queda dicho por si conviene recuperar
-algo de la versión sobria, que está en el historial de git.
 
 ## Movimiento
 

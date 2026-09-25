@@ -43,6 +43,15 @@ lleva a su página. Aquí igual: la foto con el nombre encima,
 `Pianista · Nueva York y Asturias`, y cuatro entradas —Proyectos, Agenda,
 Trayectoria, Prensa— a dos columnas, cada una con una frase y su enlace.
 
+**La portada no la describe.** Bajo su nombre no hay una frase de presentación:
+el primer bloque abre con la cita que tenía en su web anterior —«Ser meticulosa,
+y libre…», suya— y después va el texto.
+
+**La agenda sale de creartbox.nyc**, de la página de conciertos del colectivo:
+doce fechas reales de la temporada 2026-27, con sala y ciudad. Ojo, es el
+calendario del colectivo entero; si en alguna de esas fechas no toca ella, hay
+que quitarla a mano en `agenda.html`.
+
 **La portada abre con la obra, no con un retrato**, igual que él abre con una
 escultura y no con su cara: la iglesia románica iluminada de azul de un
 concierto de ADAR. Las fotografías de ella están dentro, en Proyectos,
@@ -108,16 +117,13 @@ las nueve (buscar `<nav class="navegacion"`).
 
 ## Qué queda por confirmar
 
-1. **Agenda** → ADAR 2027 figura como VII edición en preparación, y las dos
-   fechas de Nueva York como «temporada 2026–27» porque las concretas no están
-   cerradas. Sustituir por día, sala y enlace de entradas en cuanto se cierren.
-2. **Fotografías** → son recortes de las que ya estaban en
+1. **Fotografías** → son recortes de las que ya estaban en
    josefinaurraca.com y en el archivo de ADAR. El pie de página dice «crédito
    por acreditar»: ahí van los nombres de los fotógrafos en cuanto se sepan.
    Con este diseño hacen falta más y mejores: el carrusel pide cuatro buenas y
    apaisadas.
-3. **Instagram** → apunta a `@creartboxnyc`; si hay cuenta personal, cambiarla.
-4. **Textos en primera persona** → las páginas de proyectos y el estudio están
+2. **Instagram** → apunta a `@creartboxnyc`; si hay cuenta personal, cambiarla.
+3. **Textos en primera persona** → las páginas de proyectos y el estudio están
    escritas en primera persona («toco», «doy clase»).
 
 

@@ -59,6 +59,16 @@ Machine, pero `web.archive.org` está bloqueado por la política de salida de
 este entorno. No hizo falta: la página *Events* actual, leída por la API REST
 de WordPress (`/wp-json/wp/v2/pages`), ya tenía el archivo completo.
 
+**Los vídeos** (`videos.html`) son los 30 del canal de CreArtBox en YouTube,
+sacados de `youtube.com/@creartbox` y con el título oficial de cada uno leído
+por oEmbed, no transcrito a mano. 27 interpretaciones y 3 sobre el proyecto.
+
+La carátula es una imagen de `i.ytimg.com` y **el reproductor no se carga hasta
+que se pulsa**: así la página pesa lo que pesan las imágenes, y YouTube no ve a
+quien sólo pasa por delante. Al pulsar entra un `iframe` de
+`youtube-nocookie.com`. Si algún día se cae una carátula, están todas
+comprobadas en `.videos.json`, con el campo `cara` (`maxresdefault` en las 30).
+
 **La prensa** tiene dos mitades: cuatro citas comprobadas y una hemeroteca de
 quince recortes del Festival ADAR (medio, fecha y titular), sacada de
 `festivaladar.com/es/prensa/`. Y las citas no viven sólo ahí: la de Mundo

@@ -91,14 +91,14 @@ a:focus-visible{outline:2px solid var(--negro);outline-offset:3px}
 
 .cabecera{border-bottom:1px solid var(--linea);background:var(--blanco);
   position:sticky;top:0;z-index:40}
-.cabecera .caja{display:flex;align-items:center;gap:1.5rem 2rem;flex-wrap:wrap;
-  padding-block:1.1rem}
+.cabecera .caja{max-width:86rem;display:flex;align-items:center;gap:1rem 1.75rem;
+  flex-wrap:wrap;padding-block:1.1rem}
 
 .marca{margin-right:auto;font-family:var(--titulo);font-size:1.0625rem;
   font-weight:300;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap}
 .marca:hover{text-decoration:none;opacity:.6}
 
-.navegacion{display:flex;flex-wrap:wrap;gap:1.6rem}
+.navegacion{display:flex;flex-wrap:wrap;gap:1.3rem}
 .navegacion a{font-family:var(--titulo);font-size:.75rem;font-weight:400;
   letter-spacing:.18em;text-transform:uppercase;color:var(--gris);
   padding-bottom:3px;border-bottom:1px solid transparent;transition:color .2s}
@@ -242,6 +242,26 @@ a:focus-visible{outline:2px solid var(--negro);outline-offset:3px}
 .cita-obra cite{display:block;margin-top:.5rem;font-style:normal;
   font-family:var(--titulo);font-size:.6875rem;letter-spacing:.14em;
   text-transform:uppercase;color:var(--gris)}
+
+/* --- Vídeos: carátula y, al pulsar, el reproductor ----------------------- */
+
+.videos{display:grid;gap:clamp(1.25rem,2.5vw,2rem);
+  grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));
+  margin-top:clamp(1.5rem,3vw,2.25rem)}
+.video{margin:0}
+.video__marco{position:relative;width:100%;aspect-ratio:16/9;padding:0;border:0;
+  background:var(--negro);cursor:pointer;overflow:hidden;display:block}
+.video__marco img{width:100%;height:100%;object-fit:cover;transition:opacity .2s}
+.video__marco:hover img{opacity:.72}
+.video__play{position:absolute;inset:0;display:grid;place-items:center;
+  pointer-events:none}
+.video__play span{display:grid;place-items:center;width:3rem;height:3rem;
+  border-radius:50%;border:1.5px solid #fff;color:#fff;font-size:.8rem;
+  padding-left:.18rem;background:rgba(0,0,0,.35)}
+.video__marco iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video figcaption{margin-top:.55rem;font-size:.875rem;line-height:1.4}
+.video__pie{margin-top:.2rem;font-family:var(--titulo);font-size:.6875rem;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--gris)}
 
 /* --- Hemeroteca ---------------------------------------------------------- */
 

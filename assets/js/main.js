@@ -22,4 +22,22 @@
 
   const anio = document.getElementById('anio');
   if (anio) anio.textContent = new Date().getFullYear();
+
+  /* --- Vídeos: la carátula no carga nada; el reproductor entra al pulsar.
+     Así la página de vídeos pesa lo que pesan las imágenes y YouTube no ve
+     a quien sólo pasa por delante. ------------------------------------- */
+  document.querySelectorAll('.video__marco[data-video]').forEach(boton => {
+    boton.addEventListener('click', () => {
+      const id = boton.dataset.video;
+      const marco = document.createElement('iframe');
+      marco.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+      marco.title = boton.getAttribute('aria-label') || 'Vídeo';
+      marco.allow = 'accelerometer; autoplay; encrypted-media; picture-in-picture';
+      marco.allowFullscreen = true;
+      boton.replaceChildren(marco);
+      boton.removeAttribute('data-video');
+      boton.style.cursor = 'default';
+      marco.focus();
+    }, { once: true });
+  });
 })();

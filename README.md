@@ -9,11 +9,11 @@ ADAR** (Asturias, 2021). Bilingüe ES / EN.
 index.html         Inicio           agenda.html        Agenda
 proyectos.html     Proyectos        pasados.html       Archivo
   creartbox.html     CreArtBox      trayectoria.html   Trayectoria
-  adar.html          Festival ADAR  prensa.html        Prensa
-  estudio.html       Estudio de piano  contacto.html   Contacto
+  adar.html          Festival ADAR  videos.html        Vídeos
+                                    contacto.html      Contacto
 
 assets/css/main.css        la hoja de estilo, comentada
-assets/js/main.js          idioma, año, carrusel y cajón de móvil
+assets/js/main.js          idioma, año y el reproductor de vídeo
 assets/img/                las fotografías (ver assets/img/LEEME.md)
 assets/logo/favicon.svg    el icono de la pestaña
 ```
@@ -40,12 +40,13 @@ Nada más.
 Su portada tampoco es un carrusel: una fotografía fija con su firma encima, un
 dato suelto debajo (`Madrid (1957)`) y después una entrada por sección que
 lleva a su página. Aquí igual: la foto con el nombre encima,
-`Pianista · Nueva York y Asturias`, y cuatro entradas —Proyectos, Agenda,
-Trayectoria, Prensa— a dos columnas, cada una con una frase y su enlace.
+`Pianista · Nueva York y España`, y cuatro entradas —Proyectos, Agenda,
+Trayectoria, Vídeos— a dos columnas, cada una con una frase y su enlace.
 
 **La portada no la describe.** Bajo su nombre no hay una frase de presentación:
-el primer bloque abre con la cita que tenía en su web anterior —«Ser meticulosa,
-y libre…», suya— y después va el texto.
+la cita de Mundo Clásico, la suya de su web anterior —«Ser meticulosa, y
+libre…»— y después el texto. Tampoco hay cifras: ni años, ni número de
+conciertos.
 
 **El archivo** (`pasados.html`) son 108 conciertos y proyectos de 2013 a 2026,
 agrupados por año. Sale de dos sitios: de **2021 a 2026**, de la página *Events*
@@ -69,11 +70,13 @@ quien sólo pasa por delante. Al pulsar entra un `iframe` de
 `youtube-nocookie.com`. Si algún día se cae una carátula, están todas
 comprobadas en `.videos.json`, con el campo `cara` (`maxresdefault` en las 30).
 
-**La prensa** tiene dos mitades: cuatro citas comprobadas y una hemeroteca de
-quince recortes del Festival ADAR (medio, fecha y titular), sacada de
-`festivaladar.com/es/prensa/`. Y las citas no viven sólo ahí: la de Mundo
-Clásico está en Trayectoria, las de The New Yorker y Broadway World en la
-página de CreArtBox, y un titular de El Comercio en la de ADAR.
+**No hay página de prensa**: es poca cosa para una página entera y quedaba
+pobre. Las cuatro citas comprobadas cierran la bio, en **Trayectoria**, y
+además están repartidas: la de Mundo Clásico abre la portada, las de The New
+Yorker y Broadway World están en la página de CreArtBox y un titular de El
+Comercio en la de ADAR. La hemeroteca —quince recortes del Festival ADAR
+(medio, fecha y titular), sacada de `festivaladar.com/es/prensa/`— se ha
+llevado a **`adar.html`**, que es de lo que habla.
 
 > **Cuidado con dos citas de creartbox.nyc que NO son suyas.** «Marvelous and
 > lyrical playing» es de The Strad sobre la violinista Emilie-Anne Gendron, y
@@ -89,7 +92,7 @@ que quitarla a mano en `agenda.html`.
 **La portada abre con la obra, no con un retrato**, igual que él abre con una
 escultura y no con su cara: la iglesia románica iluminada de azul de un
 concierto de ADAR. Las fotografías de ella están dentro, en Proyectos,
-Trayectoria y Prensa.
+Trayectoria y en las de los proyectos.
 
 **Densidad.** El texto va a 15 px como el suyo, el `letter-spacing` de los
 titulares se ha recortado de `.2em` a `.14em`, el aire entre bloques ha bajado
@@ -146,7 +149,7 @@ falta una parte fija, va en un elemento hermano.
 ## Editar
 
 Las nueve páginas son HTML normal. Lo único repetido en las nueve es la
-cabecera, el cajón de móvil y el pie: si se cambia el menú, hay que cambiarlo en
+cabecera y el pie: si se cambia el menú, hay que cambiarlo en
 las nueve (buscar `<nav class="navegacion"`).
 
 ## Qué queda por confirmar
@@ -157,8 +160,8 @@ las nueve (buscar `<nav class="navegacion"`).
    Con este diseño hacen falta más y mejores: el carrusel pide cuatro buenas y
    apaisadas.
 2. **Instagram** → apunta a `@creartboxnyc`; si hay cuenta personal, cambiarla.
-3. **Textos en primera persona** → las páginas de proyectos y el estudio están
-   escritas en primera persona («toco», «doy clase»).
+3. **Textos en primera persona** → las páginas de proyectos están escritas en
+   primera persona («toco», «co-dirijo»).
 
 
 ## Ver y publicar

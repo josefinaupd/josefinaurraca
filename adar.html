@@ -18,14 +18,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/main.css">
+<script>document.documentElement.className="js"</script>
 </head>
-<body>
+<body class="portada">
 
 <header class="cabecera">
   <div class="caja">
     <a class="marca" href="index.html">Josefina Urraca</a>
-    <nav aria-label="Secciones">
-      <ul class="navegacion">
+    <div class="panel" id="menu">
+      <nav aria-label="Secciones">
+        <ul class="navegacion">
       <li><a href="index.html" data-es="Inicio" data-en="Home">Inicio</a></li>
       <li><a href="trayectoria.html" data-es="Trayectoria" data-en="Background">Trayectoria</a></li>
       <li class="con-hijos"><a href="proyectos.html" aria-current="page" data-es="Proyectos" data-en="Work">Proyectos</a>
@@ -38,18 +40,23 @@
       <li><a href="pasados.html" data-es="Archivo" data-en="Archive">Archivo</a></li>
       <li><a href="videos.html" data-es="Vídeos" data-en="Videos">Vídeos</a></li>
       <li><a href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
-      </ul>
-    </nav>
-    <p class="idioma">
-      <button type="button" data-setlang="es" aria-pressed="true">Es</button>
-      <button type="button" data-setlang="en" aria-pressed="false">En</button>
-    </p>
+        </ul>
+      </nav>
+      <p class="idioma">
+        <button type="button" data-setlang="es" aria-pressed="true">Es</button>
+        <button type="button" data-setlang="en" aria-pressed="false">En</button>
+      </p>
+    </div>
+    <button class="abrir" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="menu" data-es="Menú" data-en="Menu">Menú</span>
+      <span class="cerrar" data-es="Cerrar" data-en="Close">Cerrar</span>
+    </button>
   </div>
 </header>
 
 <main>
   <div class="banda">
-    <img src="assets/img/adar-iglesia.jpg" width="1500" height="1000" alt="Concierto en una iglesia románica iluminada de azul, con el piano al fondo bajo los arcos">
+    <img src="assets/img/adar-iglesia.jpg" width="1500" height="1000" alt="Concierto en una iglesia románica iluminada de azul, con el piano al fondo bajo los arcos" style="object-position:50% 48%">
     <div class="banda__texto"><div class="caja"><h1 data-es="Festival ADAR" data-en="Festival ADAR">Festival ADAR</h1></div></div>
   </div>
 

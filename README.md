@@ -13,7 +13,7 @@ proyectos.html     Proyectos        pasados.html       Archivo
                                     contacto.html      Contacto
 
 assets/css/main.css        la hoja de estilo, comentada
-assets/js/main.js          idioma, año y el reproductor de vídeo
+assets/js/main.js          idioma, año, menú de móvil y vídeo
 assets/img/                las fotografías (ver assets/img/LEEME.md)
 assets/logo/favicon.svg    el icono de la pestaña
 ```
@@ -88,6 +88,36 @@ llevado a **`adar.html`**, que es de lo que habla.
 doce fechas reales de la temporada 2026-27, con sala y ciudad. Ojo, es el
 calendario del colectivo entero; si en alguna de esas fechas no toca ella, hay
 que quitarla a mano en `agenda.html`.
+
+## La cabecera
+
+**El menú va encima de la fotografía**, en blanco y sin fondo, y la foto sube
+hasta el borde de la ventana. En cuanto se pasa la foto, la cabecera se vuelve
+blanca y opaca: lo hace un `IntersectionObserver` de cuatro líneas que pone y
+quita la clase `.sobrefoto` en el `<body>`. Contacto, que es la única página
+sin fotografía de cabecera, se queda con la cabecera blanca de siempre.
+
+Las bandas eran de 224 px y recortaban por el centro, que es lo que dejaba a
+la gente sin cabeza. Ahora son de `min(52vh,23rem)` —y la portada, de
+`min(82vh,36rem)`— y cada fotografía tiene su punto de mira, medido sobre el
+original y no a ojo, en el diccionario `FOCO`:
+
+```
+grupo 35 %   retrato 28 %   portada 15 %   adar-iglesia 48 %
+creartbox 55 %   adar-claustro 52 %   piano-azul 56 %
+```
+
+**Por debajo de 1000 px el menú se recoge en un panel.** Ese corte no es
+redondo por capricho: es justo el ancho al que la firma y las ocho secciones
+dejan de caber en una línea. El botón dice `Menú` y `Cerrar` —texto, no tres
+rayas— y el panel ocupa la ventana por debajo de la cabecera, con las
+secciones en lista, el submenú de Proyectos sangrado y el idioma abajo. Se
+cierra al elegir, con Escape y al ensanchar la ventana, y mientras está
+abierto la página no se desplaza por detrás.
+
+Sin JavaScript el panel **no** se esconde: el CSS que lo oculta cuelga de la
+clase `.js`, que se pone en el `<head>` antes de pintar. Si el JavaScript no
+llega, el menú se lee entero, en columna, como antes.
 
 **La portada abre con la obra, no con un retrato**, igual que él abre con una
 escultura y no con su cara: la iglesia románica iluminada de azul de un

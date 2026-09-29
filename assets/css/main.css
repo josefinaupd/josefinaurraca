@@ -90,7 +90,31 @@ a:focus-visible{outline:2px solid var(--negro);outline-offset:3px}
 /* --- Cabecera ------------------------------------------------------------ */
 
 .cabecera{border-bottom:1px solid var(--linea);background:var(--blanco);
-  position:sticky;top:0;z-index:40}
+  position:sticky;top:0;z-index:40;
+  transition:background-color .25s ease,border-color .25s ease}
+
+/* En las ocho páginas que abren con fotografía, la cabecera va encima de
+   ella: la imagen sube hasta el borde de la ventana y el menú flota en
+   blanco. Al pasar de largo la foto, la cabecera se vuelve sólida (la clase
+   la pone main.js). Contacto no tiene foto y se queda como estaba. */
+.portada .cabecera{position:fixed;left:0;right:0;top:0}
+
+/* .sobrefoto la pone main.js: está mientras se ve la fotografía de
+   cabecera y se quita al pasarla de largo o al abrir el panel, que es
+   blanco y se tragaría un texto blanco. */
+.sobrefoto .cabecera{background:none;border-bottom-color:transparent}
+.sobrefoto .marca,
+.sobrefoto .navegacion > li > a,
+.sobrefoto .submenu a,
+.sobrefoto .idioma button,
+.sobrefoto .abrir{color:var(--blanco)}
+.sobrefoto .navegacion > li > a[aria-current="page"],
+.sobrefoto .idioma button[aria-pressed="true"],
+.sobrefoto .abrir span{border-bottom-color:var(--blanco)}
+/* El submenú sí es una caja blanca, aunque cuelgue de la foto. */
+.sobrefoto .submenu{background:var(--blanco)}
+.sobrefoto .submenu a{color:var(--gris)}
+.sobrefoto .submenu a:hover{color:var(--negro)}
 .cabecera .caja{max-width:86rem;display:flex;align-items:center;gap:1rem 1.75rem;
   flex-wrap:wrap;padding-block:1.1rem}
 
@@ -101,7 +125,8 @@ a:focus-visible{outline:2px solid var(--negro);outline-offset:3px}
 .navegacion{display:flex;flex-wrap:wrap;gap:1.3rem}
 .navegacion a{font-family:var(--titulo);font-size:.75rem;font-weight:400;
   letter-spacing:.18em;text-transform:uppercase;color:var(--gris);
-  padding-bottom:3px;border-bottom:1px solid transparent;transition:color .2s}
+  padding-bottom:3px;border-bottom:1px solid transparent;
+  transition:color .2s,border-color .2s}
 .navegacion a:hover{color:var(--negro);text-decoration:none}
 .navegacion a[aria-current="page"]{color:var(--negro);border-bottom-color:var(--negro)}
 
@@ -113,7 +138,7 @@ a:focus-visible{outline:2px solid var(--negro);outline-offset:3px}
   border-bottom:1px solid var(--negro)}
 .idioma button:hover{color:var(--negro)}
 
-/* Submenú de Proyectos, sin JavaScript. */
+/* Submenú de Proyectos: en escritorio cuelga al pasar por encima. */
 .con-hijos{position:relative}
 .submenu{position:absolute;top:100%;left:0;z-index:10;display:none;
   min-width:13rem;padding:.6rem 0;background:var(--blanco);
@@ -122,24 +147,62 @@ a:focus-visible{outline:2px solid var(--negro);outline-offset:3px}
 .submenu a{display:block;padding:.4rem 1rem;border:0;font-size:.6875rem}
 .submenu a:hover{background:var(--gris-claro)}
 
-@media (max-width:52rem){
-  .cabecera .caja{padding-block:.9rem}
-  .marca{width:100%;margin-right:0;font-size:1rem}
-  .navegacion{gap:.9rem 1.1rem}
-  .submenu{position:static;display:block;border:0;padding:0 0 0 .9rem;
-    min-width:0}
-  .submenu a{padding:.2rem 0}
+/* El botón del menú sólo existe en pantalla estrecha, y sólo con JavaScript:
+   si no hay JavaScript, .panel no se esconde y el menú se lee entero. */
+.abrir{display:none;background:none;border:0;padding:.35rem 0;cursor:pointer;
+  font-family:var(--titulo);font-size:.75rem;font-weight:400;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--negro)}
+.abrir span{border-bottom:1px solid var(--negro);padding-bottom:3px}
+.abrir[aria-expanded="false"] .cerrar,
+.abrir[aria-expanded="true"]  .menu{display:none}
+
+/* En escritorio el panel no existe como caja: sus hijos son hijos de .caja. */
+.panel{display:contents}
+
+/* --- Cabecera en estrecho: el menú entra en un panel ---------------------
+   El corte está en 62.5rem (1000 px) porque es justo donde la marca y el
+   menú dejan de caber en una línea: medido, no a ojo. */
+@media (max-width:62.5rem){
+  .cabecera .caja{flex-wrap:nowrap;gap:1rem;padding-block:.9rem}
+  .marca{width:auto;margin-right:auto;font-size:.9375rem;letter-spacing:.16em}
+  .js .abrir{display:block}
+
+  .js .panel{display:block;position:fixed;z-index:30;
+    left:0;right:0;top:var(--cabecera,3.4rem);bottom:0;
+    padding:1.5rem var(--margen) 3rem;background:var(--blanco);
+    overflow-y:auto;overscroll-behavior:contain;
+    visibility:hidden;opacity:0;transform:translateY(-.4rem);
+    transition:opacity .18s ease,transform .18s ease,visibility .18s}
+  .js .panel.abierto{visibility:visible;opacity:1;transform:none}
+
+  .navegacion{display:block}
+  .navegacion > li{border-bottom:1px solid var(--linea)}
+  .navegacion > li > a{display:block;padding:.95rem 0;font-size:1rem;
+    letter-spacing:.14em;color:var(--negro);border-bottom:0}
+  /* La página actual va subrayada, no apagada: apagada parece desactivada. */
+  .navegacion > li > a[aria-current="page"]{border-bottom:0;
+    text-decoration:underline;text-underline-offset:6px}
+
+  .submenu{position:static;display:block;border:0;min-width:0;
+    padding:0 0 .8rem 1.1rem}
+  .submenu a{padding:.45rem 0;font-size:.8125rem;color:var(--gris)}
+  .submenu a:hover{background:none}
+
+  .idioma{margin-top:1.75rem;gap:1.25rem;font-size:.875rem}
 }
+
+/* En ancho, el panel no se esconde nunca aunque quede la clase puesta. */
+@media (min-width:62.5625rem){ .panel.abierto{display:contents} }
 
 /* --- Apertura: una fotografía fija con su nombre encima ------------------ */
 
 .apertura{position:relative;background:var(--negro)}
-.apertura img{height:min(62vh,28rem);object-fit:cover}
+.apertura img{height:min(82vh,36rem);object-fit:cover}
 /* Velo por abajo: sin él, el nombre en blanco se pierde sobre la parte
    clara de la fotografía. */
 .apertura::after,.banda::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(0,0,0,.28) 0%,rgba(0,0,0,.08) 22%,
-             rgba(0,0,0,.45) 55%,rgba(0,0,0,.88) 100%)}
+  background:linear-gradient(180deg,rgba(0,0,0,.52) 0%,rgba(0,0,0,.14) 26%,
+             rgba(0,0,0,.45) 58%,rgba(0,0,0,.88) 100%)}
 .apertura__texto{position:absolute;inset:auto 0 0 0;z-index:2;
   padding-bottom:clamp(1.25rem,2.5vw,2rem);color:var(--blanco)}
 .apertura__nombre{font-size:clamp(1.7rem,4.4vw,3rem);line-height:1.1}
@@ -154,9 +217,9 @@ a:focus-visible{outline:2px solid var(--negro);outline-offset:3px}
 /* --- Banda de encabezado de página interior ------------------------------ */
 
 .banda{position:relative;background:var(--negro)}
-.banda img{height:min(34vh,14rem);object-fit:cover}
+.banda img{height:min(52vh,23rem);object-fit:cover}
 .banda__texto{position:absolute;inset:auto 0 0 0;z-index:2;
-  padding-bottom:clamp(1rem,2vw,1.5rem);color:var(--blanco)}
+  padding-bottom:clamp(1.25rem,2.4vw,2rem);color:var(--blanco)}
 
 /* --- Entradas de la portada: una por sección ----------------------------- */
 

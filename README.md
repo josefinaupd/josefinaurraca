@@ -69,12 +69,12 @@ Machine, pero `web.archive.org` está bloqueado por la política de salida de
 este entorno. No hizo falta: la página *Events* actual, leída por la API REST
 de WordPress (`/wp-json/wp/v2/pages`), ya tenía el archivo completo.
 
-**Los vídeos** (`videos.html`) son 37: los 7 de su propio canal
+**Los vídeos** (`videos.html`) son 36: los 6 a piano solo de su propio canal
 (`youtube.com/@josefinaurraca`), que abren la página, y los 30 del canal de
 CreArtBox (`youtube.com/@creartbox`). El título oficial de cada uno está leído
-por oEmbed, no transcrito a mano. De los suyos, seis son a piano solo y el
-séptimo son las Variaciones Kakadu en trío; hay un octavo en su canal que no
-está aquí porque YouTube lo da como no público.
+por oEmbed, no transcrito a mano. En su canal hay dos más que no están aquí:
+las Variaciones Kakadu, que son en trío y esa sección es de lo que toca sola,
+y uno que YouTube da como no público.
 
 La carátula es una imagen de `i.ytimg.com` y **el reproductor no se carga hasta
 que se pulsa**: así la página pesa lo que pesan las imágenes, y YouTube no ve a

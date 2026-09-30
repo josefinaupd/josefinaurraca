@@ -43,26 +43,38 @@ lleva a su página. Aquí igual: la foto con el nombre encima,
 `Pianista · Nueva York y España`, y cuatro entradas —Proyectos, Agenda,
 Trayectoria, Vídeos— a dos columnas, cada una con una frase y su enlace.
 
-**La portada no la describe.** Bajo su nombre no hay una frase de presentación:
-la cita de Mundo Clásico, la suya de su web anterior —«Ser meticulosa, y
-libre…»— y después el texto. Tampoco hay cifras: ni años, ni número de
-conciertos.
+**La portada no la describe.** Bajo su nombre no hay una frase de
+presentación ni un párrafo: sólo la cita de Mundo Clásico y la suya de su web
+anterior —«Ser meticulosa, y libre…»—, y las entradas a las secciones.
+Tampoco hay cifras: ni años, ni número de conciertos.
 
-**El archivo** (`pasados.html`) son 108 conciertos y proyectos de 2013 a 2026,
+**Las biografías son suyas, no mías.** Las tres de Trayectoria —breve, media y
+completa— están copiadas de `creartbox.nyc/artists/josefina-urraca.html`, que
+avisa: *«These biographies are published as the artist wrote them and are not
+to be altered»*. El inglés va palabra por palabra como está allí; el español
+es la traducción, que no existía. Lo mismo en la página de CreArtBox, con la
+bio mediana del colectivo, de `creartbox.nyc/about`.
+
+**El archivo** (`pasados.html`) son 110 entradas de 2013 a 2026,
 agrupados por año. Sale de dos sitios: de **2021 a 2026**, de la página *Events*
 de josefinaurraca.com, que es la única que trae el **repertorio** de cada
 concierto; de **2013 a 2020**, del archivo de creartbox.nyc, que es lo que
 llega más atrás. Las fechas van en numérico (`17.10`, `03–16.08`) bajo el año,
-que se lee igual en los dos idiomas y evita traducir 108 fechas.
+que se lee igual en los dos idiomas y evita traducir 110 fechas. Van al modo
+americano, el mes delante: `10.17`, `08.03–16`. Dos de las entradas no son
+conciertos sino las dos bajas por maternidad, en gris y en cursiva.
 
 Se intentó también recuperar la versión antigua de su web por el Wayback
 Machine, pero `web.archive.org` está bloqueado por la política de salida de
 este entorno. No hizo falta: la página *Events* actual, leída por la API REST
 de WordPress (`/wp-json/wp/v2/pages`), ya tenía el archivo completo.
 
-**Los vídeos** (`videos.html`) son los 30 del canal de CreArtBox en YouTube,
-sacados de `youtube.com/@creartbox` y con el título oficial de cada uno leído
-por oEmbed, no transcrito a mano. 27 interpretaciones y 3 sobre el proyecto.
+**Los vídeos** (`videos.html`) son 37: los 7 de su propio canal
+(`youtube.com/@josefinaurraca`), que abren la página, y los 30 del canal de
+CreArtBox (`youtube.com/@creartbox`). El título oficial de cada uno está leído
+por oEmbed, no transcrito a mano. De los suyos, seis son a piano solo y el
+séptimo son las Variaciones Kakadu en trío; hay un octavo en su canal que no
+está aquí porque YouTube lo da como no público.
 
 La carátula es una imagen de `i.ytimg.com` y **el reproductor no se carga hasta
 que se pulsa**: así la página pesa lo que pesan las imágenes, y YouTube no ve a
@@ -85,9 +97,12 @@ llevado a **`adar.html`**, que es de lo que habla.
 > suya, y es fácil confundirlas. No se usan aquí.
 
 **La agenda sale de creartbox.nyc**, de la página de conciertos del colectivo:
-doce fechas reales de la temporada 2026-27, con sala y ciudad. Ojo, es el
+doce fechas de la temporada 2026-27 con sala, ciudad, **hora** y un enlace a
+la página del concierto en creartbox.nyc, comprobado uno a uno. La decimotercera
+—«Mother Goose» en la Flushing Library, 21 de noviembre de 2026 a las 12:00— no
+está en esa página: la dio ella, y por eso es la única sin enlace. Ojo, es el
 calendario del colectivo entero; si en alguna de esas fechas no toca ella, hay
-que quitarla a mano en `agenda.html`.
+que quitarla a mano en `FECHAS`.
 
 ## La cabecera
 

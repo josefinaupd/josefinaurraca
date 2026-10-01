@@ -7,30 +7,39 @@ CreArtBox / Festival ADAR; conviene guardarlos aparte antes de recortar.
 | Archivo | Dónde sale | Medidas | Origen |
 |---|---|---|---|
 | `adar-iglesia.jpg` | Portada | 1500 × 1000 | festivaladar.com |
-| `adar-josefina.jpg` | Sin usar | 1600 × 900 | festivaladar.com |
-| `portada.jpg` | Sin usar | 2000 × 1125 | josefinaurraca.com |
-| `piano-azul.jpg` | Página de CreArtBox | 1361 × 766 | creartbox.nyc |
-| `ensemble.jpg` | Banda de Prensa | 1600 × 1066 | creartbox.nyc |
-| `grupo.jpg` | Tarjeta y banda de CreArtBox | 1600 × 1067 | creartbox.nyc |
-| `adar-claustro.jpg` | Tarjeta de ADAR y banda de Agenda | 1500 × 1000 | festivaladar.com |
+| `grupo.jpg` | Banda de Proyectos y ficha de CreArtBox | 1600 × 1067 | creartbox.nyc |
 | `creartbox.jpg` | Banda de la página de CreArtBox | 1500 × 1000 | josefinaurraca.com |
-| `duo.jpg` | Tarjeta y banda del Estudio | 1500 × 1000 | josefinaurraca.com |
-| `retrato.jpg` | Banda de Trayectoria | 1100 × 1375 | josefinaurraca.com |
-| `retrato-cb.jpg` | Sin usar. Su retrato oficial de CreArtBox | 292 × 292 | creartbox.nyc |
+| `piano-azul.jpg` | Lámina de CreArtBox y banda de Vídeos | 1361 × 766 | creartbox.nyc |
+| `adar-josefina.jpg` | Banda de la página de ADAR | 1600 × 900 | festivaladar.com |
+| `adar-claustro.jpg` | Banda de Agenda, ficha y lámina de ADAR | 1500 × 1000 | festivaladar.com |
+| `adar-piano.jpg` | Banda de Trayectoria | 1600 × 1263 | festivaladar.com |
+| `portada.jpg` | Banda de Archivo | 2000 × 1125 | josefinaurraca.com |
 | `og.jpg` | Vista previa al compartir el enlace | 1200 × 628 | josefinaurraca.com |
+| `retrato.jpg` | Sin usar | 1100 × 1375 | josefinaurraca.com |
+| `duo.jpg` | Sin usar | 1500 × 1000 | josefinaurraca.com |
+| `ensemble.jpg` | Sin usar | 1600 × 1066 | creartbox.nyc |
+| `adar.jpg` | Sin usar | 1500 × 1000 | festivaladar.com |
+| `retrato-cb.jpg` | Sin usar. Su retrato oficial de CreArtBox | 292 × 292 | creartbox.nyc |
 
-**Sale ella en**: las cuatro del carrusel, `grupo.jpg` (la segunda por la
-izquierda), `duo.jpg`, `retrato.jpg` y `retrato-cb.jpg`. Las de ADAR sin ella
-—claustro e iglesia— son de sus conciertos y se usan como bandas de sección.
+**Sale ella en**: `adar-piano.jpg` (su retrato de la página de Equipo del
+festival: `creartbox-media-cdn.b-cdn.net/adarimages/094.jpeg`),
+`adar-josefina.jpg`, `portada.jpg`, `retrato.jpg`, `retrato-cb.jpg`, `duo.jpg`,
+`ensemble.jpg` y `grupo.jpg`, donde es la segunda por la izquierda. Las dos de
+ADAR sin ella —claustro e iglesia— son de sus conciertos y hacen de banda de
+sección.
 
-`retrato-cb.jpg` está en el repositorio pero no se usa en ninguna página: sólo
-mide 292 px de lado, que no da ni para una tarjeta. Si aparece el original en
-resolución completa, es el mejor retrato que tiene.
+**El recorte de cada banda está medido**, no puesto a ojo: la banda es ancha y
+baja y con el centro por defecto cortaba cabezas. El punto de mira de cada
+fotografía vive en el diccionario `FOCO` del generador y sale como
+`style="object-position:50% N%"` en la propia `<img>`.
 
-**Todas vienen de sus propias webs** (josefinaurraca.com, creartbox.nyc y el
-archivo de festivaladar.com), recortadas y comprimidas para esta. Falta
-acreditar a los fotógrafos: el pie de página dice «crédito por acreditar» y ahí
-van los nombres en cuanto se sepan.
+`retrato-cb.jpg` sólo mide 292 px de lado, que no da ni para una tarjeta. Si
+aparece el original en resolución completa, es un buen retrato.
+
+**Todas vienen de sus propias webs** (josefinaurraca.com, creartbox.nyc y
+festivaladar.com), recortadas y comprimidas para esta. Falta acreditar a los
+fotógrafos: el pie de página dice «crédito por acreditar» y ahí van los nombres
+en cuanto se sepan.
 
 ## Cambiar una foto
 

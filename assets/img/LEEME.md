@@ -6,7 +6,8 @@ CreArtBox / Festival ADAR; conviene guardarlos aparte antes de recortar.
 
 | Archivo | Dónde sale | Medidas | Origen |
 |---|---|---|---|
-| `adar-iglesia.jpg` | Portada | 1500 × 1000 | festivaladar.com |
+| `manos.jpg` | Portada | 2000 × 1334 | Original de ella, sin publicar |
+| `adar-iglesia.jpg` | Sin usar | 1500 × 1000 | festivaladar.com |
 | `grupo.jpg` | Banda de Proyectos y ficha de CreArtBox | 1600 × 1067 | creartbox.nyc |
 | `creartbox.jpg` | Banda de la página de CreArtBox | 1500 × 1000 | josefinaurraca.com |
 | `piano-azul.jpg` | Lámina de CreArtBox y banda de Vídeos | 1361 × 766 | creartbox.nyc |
@@ -24,7 +25,9 @@ CreArtBox / Festival ADAR; conviene guardarlos aparte antes de recortar.
 **Sale ella en**: `adar-piano.jpg` (su retrato de la página de Equipo del
 festival: `creartbox-media-cdn.b-cdn.net/adarimages/094.jpeg`),
 `adar-josefina.jpg`, `portada.jpg`, `retrato.jpg`, `retrato-cb.jpg`, `duo.jpg`,
-`ensemble.jpg` y `grupo.jpg`, donde es la segunda por la izquierda. Las dos de
+`ensemble.jpg` y `grupo.jpg`, donde es la segunda por la izquierda. En
+`manos.jpg`, la de la portada, se le ven las manos sobre el teclado: es la
+única que no sale de ninguna web, la mandó ella. Las dos de
 ADAR sin ella —claustro e iglesia— son de sus conciertos y hacen de banda de
 sección.
 

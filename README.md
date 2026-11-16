@@ -12,6 +12,10 @@ proyectos.html     Proyectos        pasados.html       Archivo
   adar.html          Festival ADAR  videos.html        Vídeos
                                     contacto.html      Contacto
 
+mother-goose.html  Landing del concierto del 21 de noviembre de 2026 en la
+                   Flushing Library. No está en el menú: se llega por el
+                   enlace, que es para lo que es.
+
 assets/css/main.css        la hoja de estilo, comentada
 assets/js/main.js          idioma, año, menú de móvil y vídeo
 assets/img/                las fotografías (ver assets/img/LEEME.md)

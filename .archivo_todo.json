@@ -1,6 +1,42 @@
 [
  {
   "anio": 2026,
+  "mes": 11,
+  "dia": 6,
+  "fecha": "11.06",
+  "titulo": "Engelbach-Hart Music Festival (Illinois)",
+  "sitio": "Illinois College, Jacksonville, IL",
+  "rep": "N. Boulanger · Bloch · Casarrubios · L. Boulanger · Kurtág · Rachmaninoff · Shostakovich"
+ },
+ {
+  "anio": 2026,
+  "mes": 10,
+  "dia": 30,
+  "fecha": "10.30",
+  "titulo": "Currents",
+  "sitio": "The DiMenna Center, NY",
+  "rep": "Laporta · Brahms · Moe · C. Schumann · R. Schumann"
+ },
+ {
+  "anio": 2026,
+  "mes": 10,
+  "dia": 6,
+  "fecha": "10.06",
+  "titulo": "Residency showcase",
+  "sitio": "Kuopio Music Centre, Kuopio, Finland",
+  "rep": "L. Boulanger · Debussy · Laporta · Janáček · C. Schumann · Falla · Messiaen · Martin"
+ },
+ {
+  "anio": 2026,
+  "mes": 10,
+  "dia": 5,
+  "fecha": "10.05–09",
+  "titulo": "Kuopio Conservatory Residency",
+  "sitio": "Kuopio Conservatory, Kuopio, Finland",
+  "rep": null
+ },
+ {
+  "anio": 2026,
   "mes": 8,
   "dia": 3,
   "fecha": "08.03–16",

@@ -299,6 +299,12 @@ a:focus-visible{outline:2px solid var(--negro);outline-offset:3px}
   font-variant-numeric:tabular-nums;color:var(--gris);white-space:nowrap}
 .archivo .que{font-size:.9375rem;line-height:1.35}
 .archivo .sitio,.archivo .nota{font-size:.8125rem;color:var(--gris)}
+/* Cada entrada tiene ancla propia: el margen la aparta de la cabecera
+   fija al saltar, y el fondo gris dice en cuál has aterrizado. */
+.archivo > li{scroll-margin-top:5.5rem}
+.archivo > li:target{background:var(--gris-claro);
+  box-shadow:0 0 0 .55rem var(--gris-claro)}
+
 /* Una baja no es un concierto: va en gris y en cursiva, sin llamar. */
 .archivo > li.baja .que{color:var(--gris);font-style:italic}
 .archivo .nota{margin-top:.05rem}

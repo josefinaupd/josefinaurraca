@@ -62,14 +62,20 @@ to be altered»*. El inglés va palabra por palabra como está allí; el españo
 es la traducción, que no existía. Lo mismo en la página de CreArtBox, con la
 bio mediana del colectivo, de `creartbox.nyc/about`.
 
-**El archivo** (`pasados.html`) son 110 entradas de 2013 a 2026,
+**El archivo** (`pasados.html`) son 114 entradas de 2013 a 2026,
 agrupados por año. Sale de dos sitios: de **2021 a 2026**, de la página *Events*
 de josefinaurraca.com, que es la única que trae el **repertorio** de cada
 concierto; de **2013 a 2020**, del archivo de creartbox.nyc, que es lo que
 llega más atrás. Las fechas van en numérico (`17.10`, `03–16.08`) bajo el año,
-que se lee igual en los dos idiomas y evita traducir 110 fechas. Van al modo
+que se lee igual en los dos idiomas y evita traducir 114 fechas. Van al modo
 americano, el mes delante: `10.17`, `08.03–16`. Dos de las entradas no son
 conciertos sino las dos bajas por maternidad, en gris y en cursiva.
+
+**Cada entrada tiene su ancla**, de la forma `#2026-11-06-engelbach-hart-…`,
+para poder enlazar a una fecha concreta: la agenda lo usa para los conciertos
+ya pasados que no tienen ficha propia en creartbox.nyc. Al aterrizar, la fila
+se queda en gris para que se vea cuál es, y `scroll-margin-top` la aparta de
+la cabecera, que es fija.
 
 Se intentó también recuperar la versión antigua de su web por el Wayback
 Machine, pero `web.archive.org` está bloqueado por la política de salida de

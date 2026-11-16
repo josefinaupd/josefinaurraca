@@ -13,8 +13,11 @@ proyectos.html     Proyectos        pasados.html       Archivo
                                     contacto.html      Contacto
 
 mother-goose.html  Landing del concierto del 21 de noviembre de 2026 en la
-                   Flushing Library. No está en el menú: se llega por el
-                   enlace, que es para lo que es.
+mother-goose.ics   Flushing Library, y su archivo de calendario. La página no
+                   está en el menú: se llega por el enlace de la agenda, que
+                   es para lo que es. El .ics lleva su VTIMEZONE de
+                   America/New_York, así que el que lo abra en España ve las
+                   18:00 y no las 12:00.
 
 assets/css/main.css        la hoja de estilo, comentada
 assets/js/main.js          idioma, año, menú de móvil y vídeo
